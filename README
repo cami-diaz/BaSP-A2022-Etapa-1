@@ -1,9 +1,17 @@
-Title: TRACKGENIX
-Author: Camila Diaz
-Description: Trackgenix is ​​a human resources application designed to load the number of employees 
+# TRACKGENIX 
+```
+Trackgenix is ​​a human resources application designed to load the number of employees 
 and their hours worked into a database.
+```
+## Technologies
+During the development we will use the following technologies:
 
-Week 2: Creation of the html corresponding to the landing page in the desktop version along with the
-necessary images.
+| WEEK | TECHNOLOGY |
+| ------ | ------ |
+| 01 |  Scrum / Figma |
+| 02 |  Git / HTML |
 
-Steps to reproduce: BaSP-A2022-Etapa-1/Semana-02/index.html in chrome.
+## Steps to reproduce: 
+BaSP-A2022-Etapa-1/Semana-02/index.html in chrome.
+
+**Author: Camila Diaz**
