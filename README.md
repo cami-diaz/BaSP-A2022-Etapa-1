@@ -12,6 +12,8 @@ During the development we will use the following technologies:
 | 02 |  Git / HTML |
 
 ## Steps to reproduce: 
+```
 BaSP-A2022-Etapa-1/Semana-02/index.html in chrome.
+```
 
 **Author: Camila Diaz**
