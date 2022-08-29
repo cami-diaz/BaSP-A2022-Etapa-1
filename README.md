@@ -4,16 +4,17 @@ Trackgenix is ​​a human resources application designed to load the number of
 and their hours worked into a database.
 ```
 ## Technologies
-During the development we will use the following technologies:
+During the development we have used the following technologies:
 
-| WEEK | TECHNOLOGY |
-| ------ | ------ |
-| 01 |  Scrum / Figma |
-| 02 |  Git / HTML |
+| WEEK | TECHNOLOGY | DESCRIPTION |
+| ------ | ------ | ------ |
+| 01 |  Scrum / Figma | TRACKGENIX SCREEN FLOW USING FIGMA.
+| 02 |  Git / HTML | HTML CREATED FOR THE LANDING PAGE AND CONNECTED THROUGH GIT TO THE GITHUB REPOSITORY.
 
 ## Steps to reproduce: 
 ```
-BaSP-A2022-Etapa-1/Semana-02/index.html in chrome.
+1. Open the BaSP-2022-Stage-1 folder.
+2. Open the Week-02 folder.
+3. Open the index file with google chrome.
 ```
-
 **Author: Camila Diaz**
