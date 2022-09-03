@@ -1,0 +1,32 @@
+header {
+    background-color: #AACE9B;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.menuHamb {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.searchContainer{
+    display: inline-block;
+    background-color: #D8E7EB;
+    border: 1px solid black;
+    vertical-align: middle;
+    margin-left: 40%;
+    border-radius: 20px;
+    width: 300px;
+}
+.glass {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    vertical-align: middle;
+}
+.searchInput {
+    border: none;
+    background-color: #D8E7EB;
+}
