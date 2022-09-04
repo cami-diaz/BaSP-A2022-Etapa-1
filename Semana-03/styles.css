@@ -9,6 +9,7 @@ header {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+    padding-left: 15px;
 }
 .searchContainer{
     display: inline-block;
@@ -29,4 +30,55 @@ header {
 .searchInput {
     border: none;
     background-color: #D8E7EB;
+}
+.footerContainer {
+    text-align: center;
+    margin: 5px 0px;
+}
+.socialIcon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 1px;
+}
+.footerContainer > p {
+    color: #373867;
+    margin: 2px 0;
+}
+aside {
+    display: inline-block;
+    width: 300px;
+    height: 3370px;
+    border-right: 1px solid #BFBFBF;
+}
+.menuTitle {
+    color: #373867;
+    width: 100px;
+    height: 33px;
+    line-height: 35.16px;
+    padding-left: 15px;
+    font-weight: 700;
+    text-decoration: underline #AACE9B;
+    text-underline-offset: 5px;
+    margin-top: 5px;
+}
+nav > a {
+    line-height: 50px;
+    display: block;
+    padding-left: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #CDCCCC ;
+    color: #373867;
+}
+.contactList > img {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-left: 15px;
+    line-height: 35px;
+}
+.contactList > p {
+    display: inline-block;
+    color:  #373867;
+    padding-left: 2px;
+    line-height: 35px;
 }
