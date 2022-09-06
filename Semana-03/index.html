@@ -59,19 +59,19 @@
         <section>
             <img id="tabletImg" src="../Semana-02/images/dataBase.png" alt="data base">
             <h3>Features</h3>
-            <div>
+            <div class="reports">
                 <img src="../Semana-02/images/hours.png" alt="hours">
                 <p>Hours log</p>
             </div>
-            <div>
+            <div class="reports">
                 <img src="../Semana-02/images/reports.png" alt="reports">
-                <p>Repots</p>
+                <p>Reports</p>
             </div>
-            <div>
+            <div class="reports">
                 <img src="../Semana-02/images/search.png" alt="search">
                 <p>Resource management</p>
             </div>
-            <div>
+            <div class="reports">
                 <img src="../Semana-02/images/group.png" alt="multiple role">
                 <p>Multiple role</p>
             </div>
@@ -80,7 +80,7 @@
             <h3>Why use trackgenix?</h3>
             <div>
                 <img src="../Semana-02/images/connectionLaptop.jpg" alt="connection Laptop">
-                <ul>
+                <ul class="whyUseTrackgenix">
                     <li>Productivity booster</li>
                     <li>Work traceability</li>
                     <li>Leadership and team managemen</li>
@@ -91,22 +91,23 @@
         <section>
             <h3>Ask for more information</h3>
             <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+                <input class="inputForm" type="text" placeholder="Name">
+                <input class="inputForm" type="email" placeholder="Email">
                 <select name="Category">
-                    <option>Category</option>
                     <option>Human Resource</option>
                     <option>Systems</option>
                     <option>Commercialization</option>
                 </select>
-                <textarea name="Message" id="Message"> Message </textarea>
-                <button>Cancel</button>
-                <button>Send</button>
+                <textarea name="Message" placeholder="Message"></textarea>
+                <div class="buttonContainer">
+                    <button class="cancelButton">Cancel</button>
+                    <button class="sendButton">Send</button>
+                </div>
             </form>
         </section>
         <section>
             <h3>Our history</h3>
-            <div>
+            <div class="ourHistory">
                 <p>  Since 2012, we’ve helped countless companies across the globe build applications that 
                      empower growth, leave a lasting impression, and transform their user experience.
                      GigaTech was created in 2012 by a trio of colleagues who met through a coding bootcamp. 
@@ -117,37 +118,37 @@
                      with major technologies to propel their growth. GigaTech currently has around 70 team members 
                      and exciting growth goals ahead of them.
                 </p>
-                <img src="../Semana-02/images/imgMainMidjpg.jpg" alt="img main mid">
             </div>
+            <img class="historyImg" src="../Semana-02/images/imgMainMidjpg.jpg" alt="img main mid">   
         </section>
-        <section>
-            <table>
-                <tr>
-                    <td>Products</td>
-                    <td>Company</td>
-                    <td>Support</td>
-                </tr>
-                <tr>
-                    <td>Features</td>
-                    <td>About us</td>
-                    <td>Help</td>
-                </tr>
-                <tr>
-                    <td>Downloads</td>
-                    <td>Trusted by</td>
-                    <td>Tutorial</td>
-                </tr>
-                <tr>
-                    <td>Integrations</td>
-                    <td>Resources</td>
-                    <td>API</td>
-                </tr>
-                <tr>
-                    <td>Additional features</td>
-                    <td>Clients</td>
-                    <td>Contact</td>
-                </tr>
-            </table>
+        <section class="listContainer">
+            <div class="liSection">
+                <p>PRODUCT</p>
+                <ul>
+                    <li>Features</li>
+                    <li>Donwnloads</li>
+                    <li>Integrations</li>
+                    <li>Additional Features</li>
+                </ul>
+            </div>
+            <div class="liSection">
+                <p>COMPANY</p>
+                <ul>
+                    <li>About us</li>
+                    <li>Trusted by</li>
+                    <li>Resources</li>
+                    <li>Clients</li>
+                </ul>
+            </div>
+            <div class="liSectionEnd">
+                <p>SUPPORT</p>
+                <ul>
+                    <li>Help</li>
+                    <li>Tutorial</li>
+                    <li>API</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </section>
         <footer>
             <div class="footerContainer">
