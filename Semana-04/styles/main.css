@@ -1,0 +1,117 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+h1 {
+    text-align: center;
+    color: #373867;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 47px;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #AACE9B;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 17px;
+}
+
+#tabletImg {
+    display: none;
+}
+
+.titleContainer > div {
+    display: flex;
+    justify-content: center;
+}
+
+.titleContainer > p {
+    text-align: center;
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+
+.imgMain {
+    width: 155px;
+    height: 144px;
+}
+
+.leanMore {
+    display: none;
+}
+
+h3 {
+    color: #373867;
+    text-decoration: underline #AACE9B;
+    text-underline-offset: 10px;
+    font-size: 14px;
+    padding: 30px 0 0 30px;
+    font-weight: 700;
+}
+
+.secondReports {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.reports {
+    display: flex;
+    flex-direction: row;
+    width: 164px;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.reports > img {
+    width: 40px;
+    height: 40px;
+}
+
+.reports > p {
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 8px;
+    color: #373867;
+}
+
+.titleWhyUseTrackgenix {
+    color: #373867;
+    text-decoration: underline #AACE9B;
+    text-underline-offset: 10px;
+    font-size: 14px;
+    padding: 16px 0 0 30px;
+    font-weight: 700;
+}
+
+.whyUseTrackgenix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 21px;
+}
+
+.whyUseTrackgenix > img {
+    width: 130px;
+    height: 95px;
+    padding-left: 10px;
+}
+
+.whyUseTrackgenix > ul > li {
+    color: #373867;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 9px;
+    margin-left: 25px;
+    list-style-image: url(../../images/piquitoIcon.png);
+}
