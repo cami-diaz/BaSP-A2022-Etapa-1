@@ -56,6 +56,45 @@ h3 {
     font-weight: 700;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0 30px;
+}
+
+form > input {
+    width: 300px;
+    height: 33px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 10px ;
+}
+
+form > select {
+    width: 314px;
+    height: 33px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 5px ;
+}
+
+form > textarea {
+    width: 301px;
+    height: 97px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 10px ;
+}
+
 .secondReports {
     display: flex;
     flex-direction: row;
@@ -114,4 +153,33 @@ h3 {
     padding-left: 9px;
     margin-left: 25px;
     list-style-image: url(../../images/piquitoIcon.png);
+}
+
+.buttonContainer {
+    width: 324px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 36px 0 0;
+}
+
+.sendButton {
+    border: 1px solid #AACE9B;
+    background-color:#AACE9B;
+    line-height: 34px;
+    width: 76px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.cancelButton {
+    border: 1px solid #AACE9B;
+    background-color: white;
+    line-height: 34px;
+    width: 76px;
+    color: #AACE9B;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #AACE9B;
 }
