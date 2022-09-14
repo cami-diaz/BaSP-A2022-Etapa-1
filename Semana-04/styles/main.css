@@ -622,6 +622,7 @@ form > textarea {
     }
     
     .subtitleContainer > p {
+        display: block;
         font-size: 24px;
         color: #373867;
         font-weight: 400;
