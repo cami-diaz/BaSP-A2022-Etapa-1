@@ -6,6 +6,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 15px;
 }
 
 .socialMediaContainer {
@@ -23,6 +24,8 @@ footer {
 
 .footerContainer > p {
     font-size: 12px;
+    color: #373867;
+    font-family: 'roboto', sans-serif;
 }
 
 @media screen and (min-width: 391px) {
@@ -55,7 +58,7 @@ footer {
     footer {
         width: 1512px;
         height: 210px;
-        border-top: 3px solid #AACE9B
+        border-top: 3px solid #AACE9B;
     }
 
     .socialMediaContainer > img {
@@ -64,7 +67,7 @@ footer {
         margin: 0 15px;
     }
 
-  .socialMediaContainer {
+    .socialMediaContainer {
         margin-bottom: 19px;
     }
 

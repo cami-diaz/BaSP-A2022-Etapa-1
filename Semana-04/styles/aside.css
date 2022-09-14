@@ -7,19 +7,10 @@ aside {
         display: flex;
         flex-direction: column;
         width: 397px;
-        height: 3374px;
+        height: 2600px;
         padding-top: 80px;
         color: #373867;
         border-right: 2px solid #CDCCCC;
-    }
-
-    .menuTitle {
-        font-size: 30px;
-        font-weight: 700px;
-        text-decoration: underline #AACE9B;
-        text-underline-offset: 10px;
-        font-family: 'roboto', sans-serif;
-        padding-left: 55px;
     }
 
     nav {
@@ -37,6 +28,15 @@ aside {
         border-bottom: 1px solid #CDCCCC;
         padding-left: 55px;
         color: #373867;
+    }
+
+    .menuTitle {
+        font-size: 30px;
+        font-weight: 700px;
+        text-decoration: underline #AACE9B;
+        text-underline-offset: 10px;
+        font-family: 'roboto', sans-serif;
+        padding-left: 55px;
     }
 
     .contactList > img {
@@ -57,7 +57,7 @@ aside {
     .contactList {
         display: flex;
         flex-direction: row;
-        padding: 10px 0 10px 55px;
+        padding: 10px 30px 10px 55px;
         align-items: center;
         line-height: 30px;
 
@@ -72,5 +72,4 @@ aside {
         padding: 36px 0 0 55px;
         margin-bottom: 36px;
     }
-
 }
