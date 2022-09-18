@@ -3,7 +3,7 @@
 
  var string = "basp-week5-etapa1";
  var secondString = string.toUpperCase();
- console.log("2a)", secondString);
+ console.log("2a):", secondString);
 
  /* 2b)- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo
   string con los primeros 5 caracteres guardando el resultado en una nueva variable 
@@ -11,7 +11,7 @@
 
  var string = "basp-week5-etapa1";
  var newString = string.substring(0, 5);
- console.log("2b)", newString);
+ console.log("2b):", newString);
 
  /* 2c)- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string 
  con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
@@ -41,10 +41,9 @@ console.log("2d):", thirdString + lastString);
  console.log("2e):", secondString);
 
  /* 2f)- Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún 
-espacio entre medio). Utilizar 
- los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas
-palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase 
-y el operador +).*/
+espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string
+que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar 
+indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
 
 var fullString = "software professional";
 var emptySpace = fullString.indexOf(" ");
