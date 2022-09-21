@@ -2,11 +2,11 @@ aside {
     display: none;
 }
 
-@media  screen and (min-width: 833px) {
+@media  screen and (min-width: 1512px) {
     aside {
         display: flex;
         flex-direction: column;
-        width: 397px;
+        width: 25%;
         height: 2600px;
         padding-top: 80px;
         color: #373867;
@@ -26,7 +26,7 @@ aside {
         text-decoration: none;
         line-height: 108px;
         border-bottom: 1px solid #CDCCCC;
-        padding-left: 55px;
+        padding-left: 25px;
         color: #373867;
     }
 
@@ -36,13 +36,13 @@ aside {
         text-decoration: underline #AACE9B;
         text-underline-offset: 10px;
         font-family: 'roboto', sans-serif;
-        padding-left: 55px;
+        padding-left: 25px;
     }
 
     .contactList > img {
         width: 29px;
         height: 29px;
-        margin-right: 29px;
+        margin-right: 15px;
         font-size: 25px;
         font-weight: 400px;
     }
@@ -57,7 +57,7 @@ aside {
     .contactList {
         display: flex;
         flex-direction: row;
-        padding: 10px 30px 10px 55px;
+        padding: 10px 30px 10px 25px;
         align-items: center;
         line-height: 30px;
 
@@ -69,7 +69,7 @@ aside {
         text-decoration: underline #AACE9B;
         text-underline-offset: 10px;
         font-family: 'roboto', sans-serif;
-        padding: 36px 0 0 55px;
+        padding: 36px 0 0 25px;
         margin-bottom: 36px;
     }
 }
