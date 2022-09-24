@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../Semana-04/styles/footer.css">
     <link rel="stylesheet" href="../Semana-04/styles/aside.css">
     <link rel="stylesheet" href="../Semana-06/employee-signup.css">
+    <script src="../Semana-06/employee-signup.js"></script>
 </head>
 <body>
     <header>
@@ -18,39 +19,55 @@
         </div>
     </header>
     <main>
-            <a href="../Semana-06/index.html">
-                <img class="imgBack" src="../Semana-06/assets/images/flechaLogin.png" alt="back">
-            </a>
-                <h1>SIGN UP</h1>
-            <form id="form">
-                <div class="formContainer">
-                    <label for="text"> Nombre </label>
-                    <input class="inputForm" type="text" placeholder="Nombre">
-                    <label for="text"> Apellido</label>
-                    <input class="inputForm" type="text" placeholder="Apellido">
-                    <label for="text"> DNI</label>
-                    <input class="inputForm" type="text" placeholder="DNI">
-                    <label for="text"> Fecha de Nacimiento</label>
-                    <input class="inputForm" type="text" placeholder="Fecha de Nacimiento">
-                    <label for="text"> Telefono</label>
-                    <input class="inputForm" type="pas}" placeholder="Telefono">
-                </div>
-                <div class="formContainer">   
-                    <label for="text"> Direccion </label>
-                    <input class="inputForm" type="text" placeholder="Direccion"> 
-                    <label for="text"> Codigo postal</label>
-                    <input class="inputForm" type="text" placeholder="Codigo postal">
-                    <label for="text"> Email</label>
-                    <input class="inputForm" type="text" placeholder="Email">
-                    <label for="text"> Contraseña</label>
-                    <input class="inputForm" type="text" placeholder="Contraseña">
-                    <label for="text"> Repetir conttraseña</label>
-                    <input class="inputForm" type="text" placeholder="Repetir contraseña">
-                </div>
-            </form>
-            <button class="signupButton">Create</button>
-        </main>
-    </div>
+        <div class="titleContainer">
+            <div class="arrowContainer">
+                <a href="../Semana-06/index.html">
+                    <img class="imgBack" src="../Semana-06/assets/images/flechaLogin.png" alt="back">
+                </a>
+            </div>
+            <h1>SIGN UP</h1>
+        </div>
+        <form id="formulary" action="#">
+            <div class="formContainer">
+                <label for="text"> Nombre </label>
+                <input class="inputForm" id="name" type="text" placeholder="Nombre">
+                <p id="name-error">No paso la validacion</p>
+                <label for="text"> Apellido</label>
+                <input class="inputForm" id="lastName" type="text" placeholder="Apellido">
+                <p id="lastName-error" >No paso la validacion</p>
+                <label for="text"> DNI</label>
+                <input class="inputForm" id="dni" type="number" placeholder="DNI">
+                <p id="dni-error">No paso la validacion</p>
+                <label for="text"> Fecha de Nacimiento</label>
+                <input class="inputForm" id="date" type="date" placeholder="Fecha de Nacimiento">
+                <p id="birthDate-error">No paso la validacion</p>
+                <label for="text"> Telefono</label>
+                <input class="inputForm" id="phone" type="number" placeholder="Telefono">
+                <p id="phone-error">No paso la validacion</p>
+            </div>
+            <div class="formContainer">   
+                <label for="text"> Direccion </label>
+                <input class="inputForm" id="adress" type="text" placeholder="Direccion">
+                <p id="adress-error">No paso la validacion</p>
+                <label for="text">Localidad</label>
+                <input class="inputForm" id="city" type="text" placeholder="Localidad">
+                <p id="city-error">No paso la validacion</p>
+                <label for="text"> Codigo postal</label>
+                <input class="inputForm" id="zip" type="number" placeholder="Codigo postal">
+                <p id="zip-error">No paso la validacion</p>
+                <label for="text"> Email</label>
+                <input class="inputForm" id="email" type="email" placeholder="Email">
+                <p id="email-error">No paso la validacion</p>
+                <label for="text"> Contraseña</label>
+                <input class="inputForm" id="password" type="password" placeholder="Contraseña">
+                <p id="password-error">No paso la validacion</p>
+                <label for="text"> Repetir contraseña</label>
+                <input class="inputForm" id="repeatPassword" type="password" placeholder="Repetir contraseña">
+                <p id="repeatPassword-error">No paso la validacion</p>
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </main>
     <footer>
         <div class="socialMediaContainer">
             <img src="../../BaSP-A2022-Etapa-1/images/TwitterIcon.png" alt="tw">
