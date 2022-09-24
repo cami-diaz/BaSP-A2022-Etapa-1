@@ -1,0 +1,205 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family:'roboto', sans-serif;
+}
+
+.imgBack {
+width: 30px;
+height: 30px;
+margin: 100px 0 0 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #373867;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 47px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 15px 15px;
+    width: 600px;
+    height: 15px;
+    margin: 5px 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+
+    margin-right: 50px;
+    border: 1px solid #373867;
+}
+
+label {
+    color: #373867;
+    font-weight: 700;
+    
+    font-family: 'roboto', sans-serif;
+}
+
+.signUp {
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+.signupButton {
+    border-radius: 5px;
+    color: darkslategrey;
+    width: 150px;
+    height: 30px;
+    background-color: #AACE9B;
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    align-items: center;
+    border: #AACE9B 1px solid;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 270px;
+}
+
+@media screen and (min-width: 833px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .imgBack {
+        width: 70px;
+        height: 70px;
+        margin: 100px 0 0 50px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #373867;
+            font-weight: 700;
+            font-family: 'roboto', sans-serif;
+            line-height: 47px;
+            font-size: 70px;
+            text-align: center;
+        }
+        
+        .inputForm {
+            padding: 15px 0px 15px 15px;
+            width: 900px;
+            height: 30px;
+            margin: 5px 0;
+            font-family: 'roboto', sans-serif;
+            font-size: 24px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border: 1px solid #373867;
+        }
+        
+        label {
+            color: #373867;
+            font-weight: 700;
+            margin-left: 50px;
+            font-family: 'roboto', sans-serif;
+        }
+        
+        .signUp {
+            color: #373867;
+            font-family: 'roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 15px 0 15px 0;
+            text-align: center;
+        }
+        
+        .signupButton {
+            border-radius: 5px;
+            color: darkslategrey;
+            width: 250px;
+            height: 60px;
+            background-color: #AACE9B;
+            color: #373867;
+            font-family: 'roboto', sans-serif;
+            align-items: center;
+            border: #AACE9B 1px solid;
+            font-weight: 700;
+            text-align: center;
+            margin-left: 370px;
+}
+
+@media  screen and (min-width: 1512px) {
+    main {
+            width: 100%;
+            margin: 0px;
+    }
+    .imgBack {
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+    }
+        
+        h1 {
+            text-align: center;
+            color: #373867;
+            font-weight: 700;
+            font-family: 'roboto', sans-serif;
+            font-size: 70px;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .formContainer {
+            display: flex;
+            flex-direction: row;
+            flex-direction: column;
+            padding-left: 50px;
+            margin-top: 20px;
+            text-align: start;
+        }
+
+        .inputForm {
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+            height: 60px;
+            margin: 5px 0;
+            font-family: 'roboto', sans-serif;
+            font-size: 39px;
+            border: 1px solid #373867;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    
+        label {
+            color: #373867;
+            font-weight: 700;
+            font-family: 'roboto', sans-serif;
+            font-size: 39px;
+            margin-top: 15px;
+            text-align: initial;
+        }
+            
+        .signupButton {
+            border-radius: 5px;
+            color: darkslategrey;
+            width: 300px;
+            height: 90px;
+            background-color: #AACE9B;
+            color: #373867;
+            font-family: 'roboto', sans-serif;
+            align-items: center;
+            border: #AACE9B 1px solid;
+            font-weight: 700;
+            margin-left: 980px;
+            font-size: 50px;
+            align-items: center;
+        }
+}
+}

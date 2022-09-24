@@ -1,0 +1,670 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family:'roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #373867;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 47px;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #AACE9B;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 17px;
+}
+
+h3 {
+    color: #373867;
+    text-decoration: underline #AACE9B;
+    text-underline-offset: 10px;
+    font-size: 14px;
+    padding: 30px 0 0 30px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0 30px;
+}
+
+form > input {
+    width: 300px;
+    height: 33px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 10px ;
+}
+
+form > select {
+    width: 314px;
+    height: 33px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 5px ;
+}
+
+form > textarea {
+    width: 301px;
+    height: 97px;
+    margin: 5px 0;
+    border: 1px solid #AACE9B;
+    color: #AACE9B;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 10px ;
+}
+
+
+#tabletImg {
+    display: none;
+}
+
+.subtitleContainer > p {
+    display: none;
+}
+
+.subtitleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContainer > div {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphTitle {
+    width: 100%;
+}
+
+.titleContainer > p {
+    text-align: center;
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+
+.imgMain {
+    width: 155px;
+    height: 144px;
+}
+
+.leanMore {
+    display: none;
+}
+
+.secondReports {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.reports {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.reports > img {
+    width: 40px;
+    height: 40px;
+}
+
+.reports > p {
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 8px;
+    color: #373867;
+}
+
+.titleWhyUseTrackgenix {
+    color: #373867;
+    text-decoration: underline #AACE9B;
+    text-underline-offset: 10px;
+    font-size: 14px;
+    padding: 16px 0 0 30px;
+    font-weight: 700;
+}
+
+.whyUseTrackgenix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 21px;
+}
+
+.whyUseTrackgenix > img {
+    width: 130px;
+    height: 95px;
+    padding-left: 10px;
+}
+
+.whyUseTrackgenix > ul > li {
+    color: #373867;
+    line-height: 20px;
+    font-size: 12px;
+    font-family:'roboto', sans-serif;
+    font-weight: 700;
+    padding-left: 9px;
+    margin-left: 25px;
+    list-style-image: url(../../images/piquitoIcon.png);
+}
+
+.buttonContainer {
+    width: 324px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 36px 0 0;
+}
+
+.sendButton {
+    border: 1px solid #AACE9B;
+    background-color:#AACE9B;
+    line-height: 34px;
+    width: 76px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.cancelButton {
+    border: 1px solid #AACE9B;
+    background-color: white;
+    line-height: 34px;
+    width: 76px;
+    color: #AACE9B;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #AACE9B;
+}
+
+.ourHistory > p {
+    display: flex;
+    justify-content: center;
+    font-family:'roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color:#373867;
+    line-height: 14px;
+    margin-left: 30px;
+    text-align: justify;
+    width: 331px;
+    margin-top: 20px;
+}
+
+.historyImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.historyImg {
+    width: 285px;
+    height: 155px;
+}
+
+.listContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    font-family:'roboto', sans-serif;
+    margin-top: 15px;
+}
+
+.liSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: #373867 solid 1px;
+    width: 114px;
+}
+
+.liSectionEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 114px;
+}
+
+.liSection > p {
+    font-weight: 700;
+    color:#373867;
+    font-family:'roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.liSection > ul, .liSectionEnd > ul {
+    padding-top: 15px;
+}
+
+.liSection > ul > li {
+    color:#373867;
+    font-family:'roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.liSectionEnd > p {
+    font-weight: 700;
+    color:#373867;
+    font-family:'roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.liSectionEnd > ul > li {
+    color:#373867;
+    font-family:'roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 833px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        color: #373867;
+        font-weight: 700;
+        font-family:'roboto', sans-serif;
+        line-height: 79px;
+        font-size: 68px;
+        margin-top: 62px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #AACE9B;
+        font-size: 21px;
+        font-weight: 700;
+        font-family:'roboto', sans-serif;
+        line-height: 24px;
+    }
+
+    h3 {
+        color: #373867;
+        text-decoration: underline #AACE9B;
+        text-underline-offset: 10px;
+        font-size: 32px;
+        padding: 67px 0 0 60px;
+        font-weight: 700;
+        font-family:'roboto', sans-serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 38px 34px 30px 39px;
+    }
+
+    form > input {
+        width: 744px;
+        height: 49px;
+        margin: 5px 0;
+        border: 1px solid #AACE9B;
+        color: #AACE9B;
+        font-family: 'roboto', sans-serif;
+        font-size: 24px;
+        padding-left: 10px ;
+    }
+
+    form > select {
+        width: 760px;
+        height: 49px;
+        margin: 5px 0;
+        border: 1px solid #AACE9B;
+        color: #AACE9B;
+        font-family: 'roboto', sans-serif;
+        font-size: 24px;
+        padding-left: 5px ;
+    }
+
+    form > textarea {
+        width: 744px;
+        height: 203px;
+        margin: 5px 0;
+        border: 1px solid #AACE9B;
+        color: #AACE9B;
+        font-family: 'roboto', sans-serif;
+        font-size: 24px;
+        padding-left: 10px ;
+    }
+
+    #tabletImg {
+        display: none;
+        }
+
+    .titleContainer > div {
+        display: flex;
+        justify-content: center;
+        }
+
+    .titleContainer > p {
+        text-align: center;
+        color: #373867;
+        font-family:'roboto', sans-serif;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        margin-top: 10px;
+        line-height: 35px;
+        font-weight: 400;
+        }
+
+    .imgMain {
+        width: 196px;
+        height: 226px;
+        }
+
+    .leanMore {
+        display: none;
+        }
+
+    .secondReports {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 60px;
+    }
+
+    .reports {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 66px 10px;
+        align-items: center;
+    }
+
+    .reports > img {
+        width: 91px;
+        height: 88px;
+    }
+
+    .reports > p {
+        font-size: 25px;
+        font-weight: 700;
+        padding-left: 20px;
+        color: #373867;
+    }
+
+    .titleWhyUseTrackgenix {
+        color: #373867;
+        text-decoration: underline #AACE9B;
+        text-underline-offset: 10px;
+        font-size: 32px;
+        padding: 0 0 0 60px;
+        font-weight: 700;
+        font-family:'roboto', sans-serif;
+    }
+
+    .whyUseTrackgenix {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        padding-top: 42px;
+    }
+
+    .whyUseTrackgenix > img {
+        width: 298px;
+        height: 210px;
+        margin-left: 20px;
+    }
+
+    .whyUseTrackgenix > ul > li {
+        color: #373867;
+        line-height: 26px;
+        font-size: 24px;
+        font-family:'roboto', sans-serif;
+        font-weight: 700;
+        padding-left: 9px;
+        padding-top: 20px;
+        list-style-image: url(../../images/piquitoIcon.png);
+    }
+
+    .buttonContainer {
+        width: 760px;
+        justify-content: end;
+        display: flex;
+        padding: 15px 0 0 0;
+        font-family:'roboto', sans-serif;
+    }
+
+    .cancelButton {
+        border: 2px solid #AACE9B;
+        background-color: white;
+        line-height: 30px;
+        width: 150px;
+        height: 50px;
+        color: #AACE9B;
+        border-radius: 5px;
+        }
+    .sendButton {
+        border: 2px solid #AACE9B;
+        background-color:#AACE9B;
+        line-height: 30px;
+        width: 150px;
+        height: 50px;
+        color: white;
+        border-radius: 5px;    
+    }
+
+    ::placeholder {
+        color: #AACE9B;
+    }
+
+    .ourHistory > p {
+        display: flex;
+        justify-content: center;
+        font-family:'roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color:#373867;
+        line-height: 28px;
+        margin: 20px 0 0 45px;
+        text-align: center;
+        width: 40%;
+    }
+
+    .ourHistory > .ourHistorySecond {
+        display: none;
+    }
+
+    .historyImg {
+        width: 318px;
+        height: 142px;
+    }
+
+    .listContainer {
+        width: 100%;
+        height: 267px;
+        margin-top: 30px;
+    }
+
+    .liSection {
+        border-right: #909090 solid 2px;
+        width: 276px;
+    }
+
+    .liSectionEnd {
+        width: 276px;
+    }
+
+    .liSection > p {
+        font-weight: 700;
+        color:#373867;
+        font-family:'roboto', sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .liSection > ul > li {
+        color:#373867;
+        font-family:'roboto', sans-serif;
+        font-size: 24px;
+        height: 14;
+        text-align: center;
+        padding: 4px 0;
+    }
+
+    .liSection > ul, .liSectionEnd > ul {
+        padding-top: 30px;
+    }
+
+    .liSectionEnd > p {
+        font-weight: 700;
+        color:#373867;
+        font-family:'roboto', sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .liSectionEnd > ul > li {
+        color:#373867;
+        font-family:'roboto', sans-serif;
+        font-size: 24px;
+        height: 14;
+        text-align: center;
+        padding: 4px 0;
+    }
+}
+
+@media  screen and (min-width: 1512px) {
+    main {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding-left: 28px;
+        color: #373867;
+        font-family: 'roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-align: left;
+        margin-top: 65px;
+    }
+
+    h2 {
+        color: #AACE9B;
+        font-size: 24px;
+        margin-top: 37px;
+        margin-bottom: 36px;
+        font-weight: 700;
+        flex-wrap: wrap;
+        text-align: left;
+        padding-left: 28px;
+    }
+
+    h3 {
+        padding: 67px 0 0 28px;
+    }
+
+    .deskContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .paragraphTitle {
+        display: none;
+    }
+
+    .titleContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .subtitleContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .subtitleContainer > p {
+        display: block;
+        font-size: 24px;
+        color: #373867;
+        font-weight: 400;
+        font-family: 'roboto', sans-serif;
+        line-height: 28px;
+        padding-left: 28px;
+        width: 617px;
+    }
+
+    .imgMain {
+        width: 458px;
+        height: 450px;
+    }
+
+    .historyContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .listContainer {
+        width: 100%;
+    }
+    
+    .leanMore {
+        display: block;
+        width: 166px;
+        border-radius: 5px;
+        border: 2px solid #AACE9B;
+        line-height: 72px;
+        margin: 10px 30px;
+        background-color: white;
+        color: #AACE9B;
+        text-align: center;
+        margin-top: 36px;
+    }
+
+    .ourHistory {
+        margin-top: 34px;
+    }
+
+    .ourHistory > p {
+        text-align: left;
+        margin: 0 36px 0 28px;
+    }
+
+    .titleWhyUseTrackgenix {
+        padding: 115px 0 0 28px;
+    }
+}
