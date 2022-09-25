@@ -66,6 +66,10 @@ label {
     margin-left: 270px;
 }
 
+#email-error, #password-error {
+    display: none;
+}
+
 @media screen and (min-width: 833px) {
     main {
         display: flex;
@@ -114,7 +118,9 @@ label {
             margin: 15px 0 15px 0;
             text-align: center;
         }
-        
+        #email-error, #password-error {
+            display: none;
+        }
         .loginButton {
             border-radius: 5px;
             color: darkslategrey;
@@ -191,6 +197,9 @@ label {
             font-weight: 700;
             text-align: center;
             font-size: 45px;
+        }
+        #email-error, #password-error {
+            display: none;
         }
 }
 }

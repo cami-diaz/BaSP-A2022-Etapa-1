@@ -190,17 +190,13 @@ button {
         margin-bottom: 50px;
     }
 
-    form {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     .formContainer {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         text-align: start;
+        justify-content: space-around;
+        }
     }
 
     .inputForm {
@@ -223,22 +219,21 @@ button {
         margin-top: 15px;
         text-align: initial;
     }
-        
-    .signupButton {
-        display: block;
+
+    .buttonCreate {
+        width: 324px;
+        display: flex;
+        flex-direction: row;
+        padding: 15px 36px 0 0; 
+        border: 1px solid #AACE9B;
+        background-color:#AACE9B;
+        line-height: 34px;
+        width: 76px;
+        color: white;
         border-radius: 5px;
-        color: darkslategrey;
-        width: 300px;
-        height: 90px;
-        background-color: #AACE9B;
-        color: #373867;
-        font-family: 'roboto', sans-serif;
-        align-items: center;
-        border: #AACE9B 1px solid;
-        font-weight: 700;
-        margin-left: 980px;
-        font-size: 50px;
-        align-items: center;
-    }
-    }
+        margin-left: 15px;
 }
+        
+
+    }
+    
