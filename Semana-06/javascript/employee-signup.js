@@ -1,10 +1,34 @@
 window.onload = function() {
+
+  function numberValidator(fullWord) {
+    var numbersArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    for (var x = 0; x < fullWord.length; x ++) {
+      if (numbersArray.includes(fullWord[x])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function letterValidator(fullWord) {
+    var letterArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+    for (var x = 0; x < fullWord.length; x ++) {
+      if (letterArray.includes(fullWord[x])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   //name validation
   var name = document.getElementById('name');
   var nameError = document.getElementById ('name-error');
 
+
   function validateName(){
-    if (name.value.length < 3){
+    if (name.value.length < 4 || numberValidator(name.value)){
       return false;
     }
     else{
@@ -34,7 +58,7 @@ window.onload = function() {
   var lastName = document.getElementById('lastName');
   var lastNameError = document.getElementById ('lastName-error');
   function validateLastName(){
-    if (lastName.value.length < 3){
+    if (lastName.value.length < 4 || numberValidator(lastName.value)){
       return false;
     }
     else{
@@ -43,7 +67,7 @@ window.onload = function() {
   }
 
   lastName.onblur = function(){
-    if (validateName(lastName.value)){
+    if (validateLastName(lastName.value)){
       lastName.style.border = "3px solid green";
       lastNameError.style.display="none";
     } else {
@@ -64,7 +88,7 @@ window.onload = function() {
   var dniError = document.getElementById ('dni-error');
 
   function validateDni(){
-      if (dni.value.length < 7){
+      if (dni.value.length < 8){
           return false;
       }
       else{
@@ -94,15 +118,17 @@ window.onload = function() {
   var dateError = document.getElementById ('birthDate-error');
 
   function validateDate(){
+    if(date.value !== "") {
       return true
+    } else return false
   }
 
   date.onblur = function(){
-    if (validateDate(dni.value)){
-        dni.style.border = "3px solid green";
+    if (validateDate(date.value)){
+        date.style.border = "3px solid green";
         dateError.style.display="none";
     } else {
-        dni.style.border = "3px solid red";
+        date.style.border = "3px solid red";
         dateError.style.color="red";
         dateError.style.fontSize="20px";
         dateError.style.display="block";
@@ -110,9 +136,9 @@ window.onload = function() {
     }
   }
 
-  dni.onfocus = function(){
+  date.onfocus = function(){
     dateError.style.display = "none";
-    dni.style.border = "3px solid blue";
+    date.style.border = "3px solid blue";
   }
 
   //phone validation
@@ -150,7 +176,7 @@ window.onload = function() {
   var adressError = document.getElementById('adress-error');
   function validateAdress(){
       var space = adress.value.indexOf(" ");
-      if(adress.value.length >= 5 && space > 0){
+      if(adress.value.length >= 5 && space > 0 && numberValidator && letterValidator(adress.value)){
           return true;
       }
       else{
@@ -254,7 +280,7 @@ window.onload = function() {
       } else {
         email.style.border = "3px solid red";
         emailError.style.color="red";
-        emailError.style.fontSize="14px";
+        emailError.style.fontSize="20px";
         emailError.style.display="block";
         emailError.style.margin="7px 0";
       }
@@ -266,33 +292,33 @@ window.onload = function() {
 
   //password validation
   var password = document.getElementById('password');
-  var passwordError = document.getElementById ('password-error');
+var passwordError = document.getElementById ('password-error');
 
-  function validatePassword(){
-    if (password.value.length < 8){
-      return false;
-    }
-    else{
-      return true;
-    }
+function validatePassword(){
+  if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
+    return false;
   }
+  else{
+    return true;
+  }
+}
 
-  password.onblur = function(){
-    if (validatePassword(password.value)){
-      password.style.border = "3px solid green";
-      passwordError.style.display="none";
-    } else {
-      password.style.border = "3px solid red";
-      passwordError.style.color="red";
-      passwordError.style.fontSize="20px";
-      passwordError.style.display="block";
-      passwordError.style.margin="7px 0";
-    }
+password.onblur = function(){
+  if (validatePassword(password.value)){
+    password.style.border = "3px solid green";
+    passwordError.style.display="none";
+  } else {
+    password.style.border = "3px solid red";
+    passwordError.style.color="red";
+    passwordError.style.fontSize="20px";
+    passwordError.style.display="block";
+    passwordError.style.margin="7px 0";
   }
-  password.onfocus = function(){
-    passwordError.style.display = "none";
-    password.style.border = "3px solid blue";
-  }
+}
+password.onfocus = function(){
+  passwordError.style.display = "none";
+  password.style.border = "3px solid blue";
+}
 
   //repeatPassword validation
   var repeatPassword = document.getElementById('repeatPassword');
@@ -334,7 +360,7 @@ window.onload = function() {
         if (!validateName()){
           errorFields += "Name\n";
           name.style.border = "3px solid red";
-          nameError.style.fontSize="14px";
+          nameError.style.fontSize="20px";
           nameError.style.display="block";
           nameError.style.margin="7px 0";
           nameError.style.color="red";
@@ -343,7 +369,7 @@ window.onload = function() {
         if (!validateLastName()){
           errorFields+= "Last Name\n";
           lastName.style.border = "3px solid red";
-          lastNameError.style.fontSize="14px";
+          lastNameError.style.fontSize="20px";
           lastNameError.style.display="block";
           lastNameError.style.margin="7px 0";
           lastNameError.style.color="red";
@@ -352,7 +378,7 @@ window.onload = function() {
         if (!validateDni()){
           errorFields+= "Dni\n";
           dni.style.border = "3px solid red";
-          dniError.style.fontSize="14px";
+          dniError.style.fontSize="20px";
           dniError.style.display="block";
           dniError.style.margin="7px 0";
           dniError.style.color="red";
@@ -361,7 +387,7 @@ window.onload = function() {
         if (!validateDate()){
           errorFields+= "Date\n";
           date.style.border = "3px solid red";
-          dateError.style.fontSize="14px";
+          dateError.style.fontSize="20px";
           dateError.style.display="block";
           dateError.style.margin="7px 0";
           dateError.style.color="red";
@@ -370,7 +396,7 @@ window.onload = function() {
         if (!validatePhone()){
           errorFields+= "Phone\n";
           phone.style.border = "3px solid red";
-          phoneError.style.fontSize="14px";
+          phoneError.style.fontSize="20px";
           phoneError.style.display="block";
           phoneError.style.margin="7px 0";
           phoneError.style.color="red";
@@ -379,7 +405,7 @@ window.onload = function() {
       if (!validateAdress()){
         errorFields+= "Adress\n";
         adress.style.border = "3px solid red";
-        adressError.style.fontSize="14px";
+        adressError.style.fontSize="20px";
         adressError.style.display="block";
         adressError.style.margin="7px 0";
         adressError.style.color="red";
@@ -388,7 +414,7 @@ window.onload = function() {
       if (!validateCity()){
         errorFields+= "City\n";
         city.style.border = "3px solid red";
-        cityError.style.fontSize="14px";
+        cityError.style.fontSize="20px";
         cityError.style.display="block";
         cityError.style.margin="7px 0";
         cityError.style.color="red";
@@ -397,7 +423,7 @@ window.onload = function() {
       if (!validateZip()){
         errorFields += "Zip\n";
         zip.style.border = "3px solid red";
-        zipError.style.fontSize="14px";
+        zipError.style.fontSize="20px";
         zipError.style.display="block";
         zipError.style.margin="7px 0";
         zipError.style.color="red";
@@ -406,7 +432,7 @@ window.onload = function() {
       if (!validateMail()){
           errorFields += "E-Mail\n";
           email.style.border = "3px solid red";
-          emailError.style.fontSize="14px";
+          emailError.style.fontSize="20px";
           emailError.style.display="block";
           emailError.style.margin="7px 0";
           emailError.style.color="red";
@@ -415,7 +441,7 @@ window.onload = function() {
       if (!validatePassword()){
           errorFields += "Password\n";
           password.style.border = "3px solid red";
-          passwordError.style.fontSize="14px";
+          passwordError.style.fontSize="20px";
           passwordError.style.display="block";
           passwordError.style.margin="7px 0";
           passwordError.style.color="red";
@@ -424,7 +450,7 @@ window.onload = function() {
       if (!validateRepeatPassword()){
         errorFields += "Repeat Password\n";
         repeatPassword.style.border = "3px solid red";
-        repeatPasswordError.style.fontSize="14px";
+        repeatPasswordError.style.fontSize="20px";
         repeatPasswordError.style.display="block";
         repeatPasswordError.style.margin="7px 0";
         repeatPasswordError.style.color="red";

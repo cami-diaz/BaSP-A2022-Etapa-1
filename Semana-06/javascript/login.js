@@ -1,4 +1,27 @@
 window.onload = function(){
+
+  function numberValidator(fullWord) {
+    var numbersArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    for (var x = 0; x < fullWord.length; x ++) {
+      if (numbersArray.includes(fullWord[x])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function letterValidator(fullWord) {
+    var letterArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+    for (var x = 0; x < fullWord.length; x ++) {
+      if (letterArray.includes(fullWord[x])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   //email validation
   var email = document.getElementById('email');
   var emailError = document.getElementById('email-error');
@@ -19,7 +42,7 @@ window.onload = function(){
     } else {
       email.style.border = "3px solid red";
       emailError.style.color="red";
-      emailError.style.fontSize="14px";
+      emailError.style.fontSize="20px";
       emailError.style.display="block";
       emailError.style.margin="7px 0";
     }
@@ -35,7 +58,7 @@ var password = document.getElementById('password');
 var passwordError = document.getElementById ('password-error');
 
 function validatePassword(){
-  if (password.value.length < 8){
+  if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
     return false;
   }
   else{

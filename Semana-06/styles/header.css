@@ -18,6 +18,7 @@ header {
     height: 15px;
 }
 
+
 @media screen and (min-width: 833px) {
     header {
         height: 92px;
@@ -33,20 +34,6 @@ header {
         width: 40px;
         height: 40px;
     }
-
-    .glass {
-        width: 20px;
-        height: 20px;
-        padding-top: 7px;
-    }
-
-    .searchContainer {
-        height: 36px;
-        width: 377px;
-        padding-left: 8px;
-        border-radius: 20px;
-        border: none;
-    }
 }
 
 @media  screen and (min-width: 1512px) {
@@ -61,17 +48,5 @@ header {
 
     .menuHamb {
         display: none;
-    }
-
-    .glass {
-        width: 20px;
-        height: 19px;
-    }
-
-    .searchContainer {
-        width: 377px;
-        height: 36px;
-        border-radius: 50px;
-        border: none;
     }
 }
