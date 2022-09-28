@@ -8,9 +8,25 @@ header {
 }
 
 .menuContainer {
-    width: 120px;
+    width: 100%;
     padding-left: 5px;
+    padding-right: 5px;
     height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonSection > a {
+    text-decoration: none;
+    color: #373867;
+    margin: 0 10px;
 }
 
 .menuHamb {
@@ -24,10 +40,17 @@ header {
         height: 92px;
     }
 
+
     .menuContainer {
-        width: 235px;
+        width: 100%;
         padding-left: 10px;
+        padding-right: 10px;
         height: 40px;
+    }
+
+    .buttonSection > a {
+        font-size: 25px;
+        margin: 0 20px;
     }
 
     .menuHamb {
@@ -39,7 +62,6 @@ header {
 @media  screen and (min-width: 1512px) {
     header {
         height: 126px;
-        justify-content: center;
     }
 
     .menuContainer {

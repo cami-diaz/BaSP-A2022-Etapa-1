@@ -76,6 +76,11 @@ form > textarea {
     display: none;
 }
 
+
+#areaMessage-error, #contact-error, #email-error, #name-error {
+    display: none;
+}
+
 .subtitleContainer > p {
     display: none;
 }
@@ -599,6 +604,7 @@ form > textarea {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        width: 100%;
     }
 
     .paragraphTitle {
