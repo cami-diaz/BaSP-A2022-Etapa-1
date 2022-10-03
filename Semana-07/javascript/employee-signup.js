@@ -26,7 +26,6 @@ window.onload = function() {
   var name = document.getElementById('name');
   var nameError = document.getElementById ('name-error');
 
-
   function validateName(){
     if (name.value.length < 4 || numberValidator(name.value)){
       return false;
@@ -38,20 +37,23 @@ window.onload = function() {
 
   name.onblur = function(){
     if (validateName(name.value)){
-      name.style.border = "3px solid green";
-      nameError.style.display="none";
+      name.classList.add("inputSuccess");
+      name.classList.remove("focusInput");
+      name.classList.remove("inputWithError");
+      nameError.classList.add("errorHidden");
     } else {
-      name.style.border = "3px solid red";
-      nameError.style.color="red";
-      nameError.style.fontSize="12px";
-      nameError.style.display="block";
-      nameError.style.margin="7px 0";
+      name.classList.add("inputWithError");
+      nameError.classList.add("errorDisplayed");
+      name.classList.remove("focusInput");
     }
   }
-  name.onfocus = function(){
-    nameError.style.display = "none";
-    name.style.border = "3px solid blue";
 
+  name.onfocus = function(){
+    nameError.classList.add("errorHidden");
+    nameError.classList.remove("errorDisplayed");
+    name.classList.add("focusInput");
+    name.classList.remove("inputSuccess");
+    name.classList.remove("inputWithError");
   }
 
   //lastName validation
@@ -68,19 +70,23 @@ window.onload = function() {
 
   lastName.onblur = function(){
     if (validateLastName(lastName.value)){
-      lastName.style.border = "3px solid green";
-      lastNameError.style.display="none";
+      lastName.classList.add("inputSuccess");
+      lastName.classList.remove("focusInput");
+      lastName.classList.remove("inputWithError");
+      lastNameError.classList.add("errorHidden");
     } else {
-      lastName.style.border = "3px solid red";
-      lastNameError.style.color="red";
-      lastNameError.style.fontSize="12px";
-      lastNameError.style.display="block";
-      lastNameError.style.margin="7px 0";
+      lastName.classList.add("inputWithError");
+      lastNameError.classList.add("errorDisplayed");
+      lastName.classList.remove("focusInput");
     }
   }
+
   lastName.onfocus = function(){
-    lastNameError.style.display = "none";
-    lastName.style.border = "3px solid blue";
+    lastNameError.classList.add("errorHidden");
+    lastNameError.classList.remove("errorDisplayed");
+    lastName.classList.add("focusInput");
+    lastName.classList.remove("inputSuccess");
+    lastName.classList.remove("inputWithError");
   }
 
   //dni validation
@@ -98,19 +104,22 @@ window.onload = function() {
 
   dni.onblur = function(){
     if (validateDni(dni.value)){
-      dni.style.border = "3px solid green";
-      dniError.style.display="none";
+      dni.classList.add("inputSuccess");
+      dni.classList.remove("focusInput");
+      dni.classList.remove("inputWithError");
+      dniError.classList.add("errorHidden");
     } else {
-      dni.style.border = "3px solid red";
-      dniError.style.color="red";
-      dniError.style.fontSize="12px";
-      dniError.style.display="block";
-      dniError.style.margin="7px 0";
+      dni.classList.add("inputWithError");
+      dniError.classList.add("errorDisplayed");
+      dni.classList.remove("focusInput");
     }
   }
   dni.onfocus = function(){
-    dniError.style.display = "none";
-    dni.style.border = "3px solid blue";
+    dniError.classList.add("errorHidden");
+    dniError.classList.remove("errorDisplayed");
+    dni.classList.add("focusInput");
+    dni.classList.remove("inputSuccess");
+    dni.classList.remove("inputWithError");
   }
 
   //date of birth validation
@@ -125,20 +134,23 @@ window.onload = function() {
 
   date.onblur = function(){
     if (validateDate(date.value)){
-        date.style.border = "3px solid green";
-        dateError.style.display="none";
+      date.classList.add("inputSuccess");
+      date.classList.remove("focusInput");
+      date.classList.remove("inputWithError");
+      dateError.classList.add("errorHidden");
     } else {
-        date.style.border = "3px solid red";
-        dateError.style.color="red";
-        dateError.style.fontSize="12px";
-        dateError.style.display="block";
-        dateError.style.margin="7px 0";
+      date.classList.add("inputWithError");
+      dateError.classList.add("errorDisplayed");
+      date.classList.remove("focusInput");
     }
   }
 
   date.onfocus = function(){
-    dateError.style.display = "none";
-    date.style.border = "3px solid blue";
+    dateError.classList.add("errorHidden");
+    dateError.classList.remove("errorDisplayed");
+    date.classList.add("focusInput");
+    date.classList.remove("inputSuccess");
+    date.classList.remove("inputWithError");
   }
 
   //phone validation
@@ -156,19 +168,22 @@ window.onload = function() {
 
   phone.onblur = function(){
     if (validatePhone(phone.value)){
-      phone.style.border = "3px solid green";
-      phoneError.style.display="none";
+      phone.classList.add("inputSuccess");
+      phone.classList.remove("focusInput");
+      phone.classList.remove("inputWithError");
+      phoneError.classList.add("errorHidden");
     } else {
-      phone.style.border = "3px solid red";
-      phoneError.style.color="red";
-      phoneError.style.fontSize="12px";
-      phoneError.style.display="block";
-      phoneError.style.margin="7px 0";
+      phone.classList.add("inputWithError");
+      phoneError.classList.add("errorDisplayed");
+      phone.classList.remove("focusInput");
     }
   }
   phone.onfocus = function(){
-    phoneError.style.display = "none";
-    phone.style.border = "3px solid blue";
+    phoneError.classList.add("errorHidden");
+    phoneError.classList.remove("errorDisplayed");
+    phone.classList.add("focusInput");
+    phone.classList.remove("inputSuccess");
+    phone.classList.remove("inputWithError");
   }
 
   //adress validation
@@ -183,21 +198,26 @@ window.onload = function() {
           return false;
       }
   }
+
   adress.onblur = function(){
     if (validateAdress(adress.value)){
-      adress.style.border = "3px solid green";
-      adressError.style.display="none";
+      adress.classList.add("inputSuccess");
+      adress.classList.remove("focusInput");
+      adress.classList.remove("inputWithError");
+      adressError.classList.add("errorHidden");
     } else {
-      adress.style.border = "3px solid red";
-      adressError.style.color="red";
-      adressError.style.fontSize="12px";
-      adressError.style.display="block";
-      adressError.style.margin="7px 0";
+      adress.classList.add("inputWithError");
+      adressError.classList.add("errorDisplayed");
+      adress.classList.remove("focusInput");
     }
   }
+
   adress.onfocus = function(){
-    adressError.style.display = "none";
-    adress.style.border = "3px solid blue";
+    adressError.classList.add("errorHidden");
+    adressError.classList.remove("errorDisplayed");
+    adress.classList.add("focusInput");
+    adress.classList.remove("inputSuccess");
+    adress.classList.remove("inputWithError");
   }
 
   //city validation
@@ -215,110 +235,124 @@ window.onload = function() {
 
   city.onblur = function(){
     if (validateCity(city.value)){
-      city.style.border = "3px solid green";
-      cityError.style.display="none";
+      city.classList.add("inputSuccess");
+      city.classList.remove("focusInput");
+      city.classList.remove("inputWithError");
+      cityError.classList.add("errorHidden");
     } else {
-      city.style.border = "3px solid red";
-      cityError.style.color="red";
-      cityError.style.fontSize="12px";
-      cityError.style.display="block";
-      cityError.style.margin="7px 0";
+      city.classList.add("inputWithError");
+      cityError.classList.add("errorDisplayed");
+      city.classList.remove("focusInput");
     }
   }
   city.onfocus = function(){
-    cityError.style.display = "none";
-    city.style.border = "3px solid blue";
+    cityError.classList.add("errorHidden");
+    cityError.classList.remove("errorDisplayed");
+    city.classList.add("focusInput");
+    city.classList.remove("inputSuccess");
+    city.classList.remove("inputWithError");
   }
 
-    //zip validation
-    var zip = document.getElementById('zip');
-    var zipError = document.getElementById ('zip-error');
+  //zip validation
+  var zip = document.getElementById('zip');
+  var zipError = document.getElementById ('zip-error');
 
-    function validateZip(){
-      if (zip.value.length < 4 || zip.value.length > 5 || letterValidator(zip.value)){
-        return false;
-      }
-      else{
+  function validateZip(){
+    if (zip.value.length < 4 || zip.value.length > 5 || letterValidator(zip.value)){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+
+  zip.onblur = function(){
+    if (validateZip(zip.value)){
+      zip.classList.add("inputSuccess");
+      zip.classList.remove("focusInput");
+      zip.classList.remove("inputWithError");
+      zipError.classList.add("errorHidden");
+    } else {
+      zip.classList.add("inputWithError");
+      zipError.classList.add("errorDisplayed");
+      zip.classList.remove("focusInput");
+    }
+  }
+  zip.onfocus = function(){
+    zipError.classList.add("errorHidden");
+    zipError.classList.remove("errorDisplayed");
+    zip.classList.add("focusInput");
+    zip.classList.remove("inputSuccess");
+    zip.classList.remove("inputWithError");
+  }
+
+  //email validation
+  var email = document.getElementById('email');
+  var emailError = document.getElementById('email-error');
+  var mailFormat = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+  function validateMail(){ 
+    if (email.value.match(mailFormat)){
         return true;
-      }
     }
+    else{
+        return false;
+    }
+  }
 
-    zip.onblur = function(){
-      if (validateZip(zip.value)){
-        zip.style.border = "3px solid green";
-        zipError.style.display="none";
-      } else {
-        zip.style.border = "3px solid red";
-        zipError.style.color="red";
-        zipError.style.fontSize="12px";
-        zipError.style.display="block";
-        zipError.style.margin="7px 0";
-      }
+  email.onblur = function(){
+    if (validateMail(email.value)){
+      email.classList.add("inputSuccess");
+      email.classList.remove("focusInput");
+      email.classList.remove("inputWithError");
+      emailError.classList.add("errorHidden");
+    } else {
+      email.classList.add("inputWithError");
+      emailError.classList.add("errorDisplayed");
+      email.classList.remove("focusInput");
     }
-    zip.onfocus = function(){
-      zipError.style.display = "none";
-      zip.style.border = "3px solid blue";
-    }
+  }
 
-    //email validation
-    var email = document.getElementById('email');
-    var emailError = document.getElementById('email-error');
-    var mailFormat = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    function validateMail(){ 
-      if (email.value.match(mailFormat)){
-          return true;
-      }
-      else{
-          return false;
-      }
-    }
+  email.onfocus = function(){
+    emailError.classList.add("errorHidden");
+    emailError.classList.remove("errorDisplayed");
+    email.classList.add("focusInput");
+    email.classList.remove("inputSuccess");
+    email.classList.remove("inputWithError");
+  }
 
-    email.onblur = function(){
-      if (validateMail(email.value)){
-        email.style.border = "3px solid green";
-        emailError.style.display="none";
-      } else {
-        email.style.border = "3px solid red";
-        emailError.style.color="red";
-        emailError.style.fontSize="12px";
-        emailError.style.display="block";
-        emailError.style.margin="7px 0";
-      }
-    }
-    email.onfocus = function(){
-      emailError.style.display = "none";
-      email.style.border = "3px solid blue";
-    }
 
   //password validation
   var password = document.getElementById('password');
-var passwordError = document.getElementById ('password-error');
+  var passwordError = document.getElementById ('password-error');
 
-function validatePassword(){
-  if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
-    return false;
+  function validatePassword(){
+    if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
+      return false;
+    }
+    else{
+      return true;
+    }
   }
-  else{
-    return true;
-  }
-}
 
-password.onblur = function(){
-  if (validatePassword(password.value)){
-    password.style.border = "3px solid green";
-    passwordError.style.display="none";
-  } else {
-    password.style.border = "3px solid red";
-    passwordError.style.color="red";
-    passwordError.style.fontSize="12px";
-    passwordError.style.display="block";
-    passwordError.style.margin="7px 0";
+  password.onblur = function(){
+    if (validatePassword(password.value)){
+      password.classList.add("inputSuccess");
+      password.classList.remove("focusInput");
+      password.classList.remove("inputWithError");
+      passwordError.classList.add("errorHidden");
+    } else {
+      password.classList.add("inputWithError");
+      passwordError.classList.add("errorDisplayed");
+      password.classList.remove("focusInput");
+    }
   }
-}
-password.onfocus = function(){
-  passwordError.style.display = "none";
-  password.style.border = "3px solid blue";
-}
+  password.onfocus = function(){
+    passwordError.classList.add("errorHidden");
+    passwordError.classList.remove("errorDisplayed");
+    password.classList.add("focusInput");
+    password.classList.remove("inputSuccess");
+    password.classList.remove("inputWithError");
+  }
 
   //repeatPassword validation
   var repeatPassword = document.getElementById('repeatPassword');
@@ -335,145 +369,149 @@ password.onfocus = function(){
 
   repeatPassword.onblur = function(){
     if (validateRepeatPassword(repeatPassword.value)){
-      repeatPassword.style.border = "3px solid green";
-      repeatPasswordError.style.display="none";
+      repeatPassword.classList.add("inputSuccess");
+      repeatPassword.classList.remove("focusInput");
+      repeatPassword.classList.remove("inputWithError");
+      repeatPasswordError.classList.add("errorHidden");
     } else {
-      repeatPassword.style.border = "3px solid red";
-      repeatPasswordError.style.color="red";
-      repeatPasswordError.style.fontSize="12px";
-      repeatPasswordError.style.display="block";
-      repeatPasswordError.style.margin="7px 0";
+      repeatPassword.classList.add("inputWithError");
+      repeatPasswordError.classList.add("errorDisplayed");
+      repeatPassword.classList.remove("focusInput");
     }
   }
   repeatPassword.onfocus = function(){
-    repeatPasswordError.style.display = "none";
-    repeatPassword.style.border = "3px solid blue";
+    repeatPasswordError.classList.add("errorHidden");
+    repeatPasswordError.classList.remove("errorDisplayed");
+    repeatPassword.classList.add("focusInput");
+    repeatPassword.classList.remove("inputSuccess");
+    repeatPassword.classList.remove("inputWithError");
   }
-
     //Button
     var form = document.getElementById('formulary');
-    form.addEventListener('submit',function(e){
-      console.log(form)
-        e.preventDefault();
-        var errorFields = "";
-        var result = true;
+    var create = document.getElementById('create');
+    create.addEventListener('click', createEvent);
+  
+    function createEvent() {
+      if (
+        validateName(name.value)
+        && validateLastName(lastName.value)
+        && validateDni(dni.value)
+        && validateDate(date.value)
+        && validatePhone(phone.value)
+        && validateAdress(adress.value)
+        && validateCity(city.value)
+        && validateZip(zip.value)
+        && validateMail(email.value)
+        && validatePassword(password.value)
+        && validateRepeatPassword(repeatPassword.value)
+      ) {
+          fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=
+            ${name.value}&lastName=
+            ${lastName.value}&dni=
+            ${dni.value}&date=
+            ${date.value}&phone=
+            ${phone.value}&adress=
+            ${adress.value}&city=
+            ${city.value}&zip=
+            ${zip.value}&email=
+            ${email.value}&password=
+            ${password.value}&repeatPassword=
+            ${repeatPassword.value}`)
+            .then(response => response.json())
+            .then(data => {
+              localStorage.setItem('name', name.value);
+              localStorage.setItem('lastName', lastName.value);
+              localStorage.setItem('dni', dni.value);
+              localStorage.setItem('date', date.value);
+              localStorage.setItem('phone', phone.value);
+              localStorage.setItem('adress', adress.value);
+              localStorage.setItem('city', city.value);
+              localStorage.setItem('zip', zip.value);
+              localStorage.setItem('email', email.value);
+              localStorage.setItem('password', password.value);
+              localStorage.setItem('repeatPassword', repeatPassword.value);
+              alert('Sign up successful! Name: ' + name.value
+              + '. Surname: ' + lastName.value
+              + '. DNI: ' + dni.value
+              + '. Date of birth: ' + date.value
+              + '. Phone Number: ' + phone.value
+              + '. Address: ' + adress.value
+              + '. City: ' + city.value
+              + '. Postcode: ' + zip.value
+              + '. Email: ' + email.value
+              + '. Password: ' + password.value
+              + '. Repeat Password: ' + repeatPassword.value + '. Please, confirm.');
+              form.reset();
+              name.classList.remove("inputSuccess");
+              lastName.classList.remove("inputSuccess");
+              dni.classList.remove("inputSuccess");
+              date.classList.remove("inputSuccess");
+              phone.classList.remove("inputSuccess");
+              adress.classList.remove("inputSuccess");
+              city.classList.remove("inputSuccess");
+              zip.classList.remove("inputSuccess");
+              email.classList.remove("inputSuccess");
+              password.classList.remove("inputSuccess");
+              repeatPassword.classList.remove("inputSuccess");
+            })
+              .catch(error => console.error(error));
+      } else {
         if (!validateName()){
-          errorFields += "Name\n";
-          name.style.border = "3px solid red";
-          nameError.style.fontSize="12px";
-          nameError.style.display="block";
-          nameError.style.margin="7px 0";
-          nameError.style.color="red";
-          result = true;
+          name.classList.add("inputWithError");
+          nameError.classList.add("errorDisplayed");
+          name.classList.remove("focusInput");
         }
         if (!validateLastName()){
-          errorFields+= "Last Name\n";
-          lastName.style.border = "3px solid red";
-          lastNameError.style.fontSize="12px";
-          lastNameError.style.display="block";
-          lastNameError.style.margin="7px 0";
-          lastNameError.style.color="red";
-          result = true;
+          lastName.classList.add("inputWithError");
+          lastNameError.classList.add("errorDisplayed");
+          lastName.classList.remove("focusInput");
         }
         if (!validateDni()){
-          errorFields+= "Dni\n";
-          dni.style.border = "3px solid red";
-          dniError.style.fontSize="12px";
-          dniError.style.display="block";
-          dniError.style.margin="7px 0";
-          dniError.style.color="red";
-          result = true;
+          dni.classList.add("inputWithError");
+          dniError.classList.add("errorDisplayed");
+          dni.classList.remove("focusInput");
         }
         if (!validateDate()){
-          errorFields+= "Date\n";
-          date.style.border = "3px solid red";
-          dateError.style.fontSize="12px";
-          dateError.style.display="block";
-          dateError.style.margin="7px 0";
-          dateError.style.color="red";
-          result = true;
+          date.classList.add("inputWithError");
+          dateError.classList.add("errorDisplayed");
+          date.classList.remove("focusInput");
         }
         if (!validatePhone()){
-          errorFields+= "Phone\n";
-          phone.style.border = "3px solid red";
-          phoneError.style.fontSize="12px";
-          phoneError.style.display="block";
-          phoneError.style.margin="7px 0";
-          phoneError.style.color="red";
-          result = true;
+          phone.classList.add("inputWithError");
+          phoneError.classList.add("errorDisplayed");
+          phone.classList.remove("focusInput");
         }
       if (!validateAdress()){
-        errorFields+= "Adress\n";
-        adress.style.border = "3px solid red";
-        adressError.style.fontSize="12px";
-        adressError.style.display="block";
-        adressError.style.margin="7px 0";
-        adressError.style.color="red";
-        result = true;
+        adress.classList.add("inputWithError");
+        adressError.classList.add("errorDisplayed");
+        adress.classList.remove("focusInput");
       }
       if (!validateCity()){
-        errorFields+= "City\n";
-        city.style.border = "3px solid red";
-        cityError.style.fontSize="12px";
-        cityError.style.display="block";
-        cityError.style.margin="7px 0";
-        cityError.style.color="red";
-        result = true;
+        city.classList.add("inputWithError");
+        cityError.classList.add("errorDisplayed");
+        city.classList.remove("focusInput");
       }
       if (!validateZip()){
-        errorFields += "Zip\n";
-        zip.style.border = "3px solid red";
-        zipError.style.fontSize="12px";
-        zipError.style.display="block";
-        zipError.style.margin="7px 0";
-        zipError.style.color="red";
-        result = true;
+        zip.classList.add("inputWithError");
+        zipError.classList.add("errorDisplayed");
+        zip.classList.remove("focusInput");;
       }
       if (!validateMail()){
-          errorFields += "E-Mail\n";
-          email.style.border = "3px solid red";
-          emailError.style.fontSize="12px";
-          emailError.style.display="block";
-          emailError.style.margin="7px 0";
-          emailError.style.color="red";
-          result = true;
+        email.classList.add("inputWithError");
+        emailError.classList.add("errorDisplayed");
+        email.classList.remove("focusInput");
       }
       if (!validatePassword()){
-          errorFields += "Password\n";
-          password.style.border = "3px solid red";
-          passwordError.style.fontSize="12px";
-          passwordError.style.display="block";
-          passwordError.style.margin="7px 0";
-          passwordError.style.color="red";
-          result = true;
+        password.classList.add("inputWithError");
+        passwordError.classList.add("errorDisplayed");
+        password.classList.remove("focusInput");
       }
       if (!validateRepeatPassword()){
-        errorFields += "Repeat Password\n";
-        repeatPassword.style.border = "3px solid red";
-        repeatPasswordError.style.fontSize="12px";
-        repeatPasswordError.style.display="block";
-        repeatPasswordError.style.margin="7px 0";
-        repeatPasswordError.style.color="red";
-        result = true;
+        repeatPassword.classList.add("inputWithError");
+        repeatPasswordError.classList.add("errorDisplayed");
+        repeatPassword.classList.remove("focusInput");
       }
-  
-      if(validateName(name.value) && validateLastName(lastName.value) && validateDni(dni.value) && validateDate(date.value) && validatePhone(phone.value) && validateAdress(adress.value) && validateCity(city.value) && validateZip(zip.value) && validateMail(email.value) && validatePassword(password.value) && validateRepeatPassword(repeatPassword.value)){
-        alert("Name: " + name.value + "\n Last Name: "+ lastName.value + "\n DNI: " + dni.value + "\n Date: " + date.value + "\n Phone: " + phone.value + "\n Adress: " + adress.value + "\n City: " + city.value + "\n Zip: " + zip.value + "\n E-mail: " + email.value + "\n Password: " + password.value+"\n" + "\n Repeat Password: " + repeatPassword.value);
-        form.reset();
-        name.style.border = "1.5px solid #373867";
-        lastName.style.border = "1.5px solid #373867";
-        email.style.border = "1.5px solid #373867";
-        dni.style.border = "1.5px solid #373867";
-        date.style.border = "1.5px solid #373867";
-        phone.style.border = "1.5px solid #373867";
-        adress.style.border = "1.5px solid #373867";
-        city.style.border = "1.5px solid #373867";
-        password.style.border = "1.5px solid #373867";
-        zip.style.border = "1.5px solid #373867";
-        repeatPassword.style.border = "1.5px solid #373867";
+        alert('Please, check you information is correct.');
+        throw new Error
       }
-      else if(result){
-        alert("Please check the following fields for possible errors:\n" + errorFields);
-      }
-    });
-}
+    };

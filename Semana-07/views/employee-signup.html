@@ -29,42 +29,42 @@
       <div class="formContainer">
         <label for="text"> Name </label>
         <input class="inputForm" id="name" type="text" placeholder="Name">
-        <p id="name-error">Only letters and must have more than 3 letters.</p>
+        <p id="name-error" class="errorHidden">Only letters and must have more than 3 letters.</p>
         <label for="text"> Surname</label>
         <input class="inputForm" id="lastName" type="text" placeholder="Surname">
-        <p id="lastName-error" >Only letters and must have more than 3 letters.</p>
+        <p id="lastName-error" class="errorHidden">Only letters and must have more than 3 letters.</p>
         <label for="text"> DNI</label>
-        <input class="inputForm" id="dni" type="text" placeholder="DNI">
-        <p id="dni-error">Only numbers and more than 7 numbers.</p>
+        <input class="inputForm" id="dni" type="number" placeholder="DNI">
+        <p id="dni-error" class="errorHidden">Only numbers and more than 7 numbers.</p>
         <label for="text"> Date of birth</label>
         <input class="inputForm" id="date" type="date" placeholder="Date of birth">
-        <p id="birthDate-error">Please enter a valid date.</p>
+        <p id="birthDate-error" class="errorHidden">Please enter a valid date.</p>
         <label for="text"> Phone</label>
-        <input class="inputForm" id="phone" type="text" placeholder="Phone">
-        <p id="phone-error">Only numbers and more than 10 numbers.</p>
+        <input class="inputForm" id="phone" type="number" placeholder="Phone">
+        <p id="phone-error" class="errorHidden">Only numbers and more than 10 numbers.</p>
       </div>
       <div class="formContainer">   
         <label for="text"> Adress </label>
         <input class="inputForm" id="adress" type="text" placeholder="Adress">
-        <p id="adress-error">At least 5 characters with letters, numbers and a space in between.</p>
+        <p id="adress-error" class="errorHidden">At least 5 characters with letters, numbers and a space in between.</p>
         <label for="text">Location</label>
         <input class="inputForm" id="city" type="text" placeholder="Location">
-        <p id="city-error">Alphanumeric text and must have more than 3 letters.</p>
+        <p id="city-error" class="errorHidden">Alphanumeric text and must have more than 3 letters.</p>
         <label for="text"> Zip</label>
-        <input class="inputForm" id="zip" type="text" placeholder="Zip">
-        <p id="zip-error">Minimum 4 numbers and maximum 5 number.</p>
+        <input class="inputForm" id="zip" type="number" placeholder="Zip">
+        <p id="zip-error" class="errorHidden">Minimum 4 numbers and maximum 5 number.</p>
         <label for="text"> Email</label>
-        <input class="inputForm" id="email" type="text" placeholder="Email">
-        <p id="email-error">Enter a valid email format (cami@gmail.com).</p>
+        <input class="inputForm" id="email" type="email" placeholder="Email">
+        <p id="email-error" class="errorHidden">Enter a valid email format (cami@gmail.com).</p>
         <label for="text"> Password</label>
         <input class="inputForm" id="password" type="password" placeholder="Password">
-        <p id="password-error">At least 8 characters, made up of letters and numbers.</p>
+        <p id="password-error" class="errorHidden">At least 8 characters, made up of letters and numbers.</p>
         <label for="text"> Repeat password</label>
         <input class="inputForm" id="repeatPassword" type="password" placeholder="Repeat password">
-        <p id="repeatPassword-error">The passwords must be the same.</p>
+        <p id="repeatPassword-error" class="errorHidden">The passwords must be the same.</p>
         </div>
         <div class="buttonCreate">
-          <button type="submit">Create</button>
+          <button id="create" type="submit">Create</button>
         <div>
     </form>
   </main>

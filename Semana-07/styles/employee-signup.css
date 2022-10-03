@@ -34,7 +34,7 @@ label {
     font-family: 'roboto', sans-serif;
 }
 
-#date {
+.dateInput {
     width: 185px;
     display: flex;
     flex-direction: column;
@@ -95,8 +95,27 @@ button {
     margin-top: 25px;
 }
 
-#name-error, #lastName-error, #dni-error, #birthDate-error, #phone-error, #adress-error, #zip-error, #email-error, #password-error, #repeatPassword-error, #city-error {
+.errorHidden {
     display: none;
+}
+
+.focusInput {
+    border: 3px solid blue;
+}
+
+.inputSuccess {
+    border: 3px solid green;
+}
+
+.inputWithError {
+    border: 3px solid red;
+}
+
+.errorDisplayed {
+    color: red;
+    font-size: 20px;
+    display: block;
+    margin: 7px 0;
 }
 
 @media screen and (min-width: 833px) {
@@ -133,7 +152,7 @@ button {
         margin: 25px 0;
     }
 
-    #date {
+    .dateInput {
         width: 615px;
         display: flex;
         flex-direction: column;
@@ -161,6 +180,29 @@ button {
         font-family: 'roboto', sans-serif;
         font-size: 30px;
         border: 1px solid #373867;
+    }
+
+    .errorHidden {
+        display: none;
+    }
+    
+    .focusInput {
+        border: 3px solid blue;
+    }
+    
+    .inputSuccess {
+        border: 3px solid green;
+    }
+    
+    .inputWithError {
+        border: 3px solid red;
+    }
+    
+    .errorDisplayed {
+        color: red;
+        font-size: 20px;
+        display: block;
+        margin: 7px 0;
     }
 }
 
@@ -205,7 +247,7 @@ button {
         margin: 25px 0;
     }
 
-    #date {
+    .dateInput {
         width: 715px;
         display: flex;
         flex-direction: column;
@@ -241,5 +283,28 @@ button {
         border: 1px solid #373867;
         margin-top: 25px;
         margin-bottom: 25px;
-    }    
+    }
+
+    .errorHidden {
+        display: none;
+    }
+    
+    .focusInput {
+        border: 3px solid blue;
+    }
+    
+    .inputSuccess {
+        border: 3px solid green;
+    }
+    
+    .inputWithError {
+        border: 3px solid red;
+    }
+    
+    .errorDisplayed {
+        color: red;
+        font-size: 20px;
+        display: block;
+        margin: 7px 0;
+    }
 }
