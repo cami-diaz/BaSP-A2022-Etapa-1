@@ -88,38 +88,27 @@ window.onload = function(){
 
   //Button
   var form = document.getElementById('formulary');
-  form.addEventListener('submit',function(e){
-    console.log(form)
-      e.preventDefault();
-      var errorFields = "";
-      var result = true;
-    if (!validateMail()){
-        errorFields += "email\n";
-        email.style.border = "3px solid red";
-        emailError.style.fontSize="14px";
-        emailError.style.display="block";
-        emailError.style.margin="7px 0";
-        emailError.style.color="red";
-        result = true;
+  var submitButton = document.getElementById('submit');
+  submitButton.addEventListener('click', submitEvent);
+
+  function submitEvent() {
+    if (validatePassword(password.value) && validateMail(email.value)) {
+      fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            alert(data.msg + '! Email: ' + email.value + ' Password: ' + password.value + '.');
+            form.reset();
+            email.classList.remove("inputSuccess");
+            password.classList.remove("inputSuccess");
+          } else {
+            alert(data.msg);
+          }
+        })
+        .catch(error => console.error(error));
+    } else {
+        alert('Your email or password are incorrect.');
     }
-    if (!validatePassword()){
-        errorFields += "Password\n";
-        password.style.border = "3px solid red";
-        passwordError.style.fontSize="14px";
-        passwordError.style.display="block";
-        passwordError.style.margin="7px 0";
-        passwordError.style.color="red";
-        result = true;
-    }
-    
-    if(validateMail(email.value) && validatePassword(password.value)){
-      alert("Email: " + email.value + "\n Password: " + password.value);
-      form.reset();
-      email.style.border = "1.5px solid #373867";
-      password.style.border = "1.5px solid #373867";
-    }
-    else if(result){
-      alert("Please check the following fields for possible errors:\n" + errorFields);
-    }
-  });
+  };
+
 }
