@@ -27,15 +27,15 @@
       </div>
         <form id="formulary" action="#">
           <label for="text"> Email </label>
-          <input class="inputForm" id="email" type="text" placeholder="Email">
-          <p id="email-error"> Enter a valid email format (cami@gmail.com).</p>
+          <input class="inputForm" id="email" type="email" placeholder="Email">
+          <p id="email-error" class="errorHidden"> Enter a valid email format (cami@gmail.com).</p>
           <label for="text"> Password </label>
           <input class="inputForm" id="password" type="password" placeholder="Password">
-          <p id="password-error">At least 8 characters, made up of letters and numbers.</p>
+          <p id="password-error" class="errorHidden">At least 8 characters, made up of letters and numbers.</p>
           <a href="../views/employee-signup.html" class="signUp"> 
             Don´t have an account? SIGN UP 
           </a>
-            <button type="submit" class="loginButton">LOGIN</button>
+            <button id="submit" type="submit" class="loginButton">LOGIN</button>
         </form>
         </main>
     </div>

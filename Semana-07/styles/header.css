@@ -1,0 +1,74 @@
+header {
+    background-color: #AACE9B;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+.menuContainer {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonSection > a {
+    text-decoration: none;
+    color: #373867;
+    margin: 0 10px;
+}
+
+.menuHamb {
+    width: 15px;
+    height: 15px;
+}
+
+
+@media screen and (min-width: 833px) {
+    header {
+        height: 92px;
+    }
+
+
+    .menuContainer {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+    }
+
+    .buttonSection > a {
+        font-size: 25px;
+        margin: 0 20px;
+    }
+
+    .menuHamb {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media  screen and (min-width: 1512px) {
+    header {
+        height: 126px;
+    }
+
+    .menuContainer {
+        display: none;
+    }
+
+    .menuHamb {
+        display: none;
+    }
+}

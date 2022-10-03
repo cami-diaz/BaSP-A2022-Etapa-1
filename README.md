@@ -14,15 +14,15 @@ During the development we have used the following technologies:
 | 04 |  CSS | RESPONSIVE DESIGN WITH FLEXBOX.
 | 05 |  JAVASCRIPT | EXERCISES.
 | 06 |  JAVASCRIPT | CREATION OF FORMS: LOGIN AND SIGN UP EMPLOYEES WITH VALIDATIONS MADE WITH JAVASCRIPT.
-
+| 07 |  JAVASCRIPT | HANDLING OF THE GET METHOD AND IMPLEMENTATION OF LOCAL STORAGE.
 ## Steps to reproduce: 
 ```
 1. Open the BaSP-2022-Stage-1 folder.
-2. Open the Week-06 folder.
+2. Open the Week-07 folder.
 3. Open the views folder.
-4. Open the login file y sign up file with google chrome.
+4. Open the login file and sign up file with google chrome.
 5. Once the login is open, fill in the form fields to see the validations.
 ------------------------------------
-Or, you can enter the link https://cami-diaz.github.io/BaSP-A2022-Etapa-1/Semana-06/views/ and click on the login and sign up button and thus be able to enter the forms.
+Or, you can enter the link https://cami-diaz.github.io/BaSP-A2022-Etapa-1/Semana-07/views/ and click on the login and sign up button and thus be able to enter the forms.
 ```
 **Author: Camila Diaz**

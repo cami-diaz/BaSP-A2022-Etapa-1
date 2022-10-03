@@ -1,0 +1,277 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family:'roboto', sans-serif;
+    padding: 20px 0 0 0;
+}
+
+.imgBack {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #373867;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    line-height: 47px;
+    font-size: 40px;
+    text-align: center;
+}
+
+label {
+    color: #373867;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    width: 380px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 180px 20px;
+    align-items: center;
+}
+
+form > a {
+    text-align: center;
+}
+
+.displayTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 30px 20px;
+}
+
+.displayTitle > a {
+    width: 40%;
+    height: auto;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 15px 15px;
+    height: 15px;
+    width: 380px;
+    margin: 5px 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    border: 1px solid #373867;
+}
+
+.errorHidden {
+    display: none;
+}
+
+.focusInput {
+    border: 3px solid blue;
+}
+
+.inputSuccess {
+    border: 3px solid green;
+}
+
+.inputWithError {
+    border: 3px solid red;
+}
+
+.errorDisplayed {
+    color: red;
+    font-size: 20px;
+    display: block;
+    margin: 7px 0;
+}
+
+.signUp {
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+.loginButton {
+    border-radius: 5px;
+    color: darkslategrey;
+    width: 150px;
+    height: 30px;
+    background-color: #AACE9B;
+    color: #373867;
+    font-family: 'roboto', sans-serif;
+    border: #AACE9B 1px solid;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 833px) {
+    .imgBack {
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #373867;
+        font-weight: 700;
+        font-family: 'roboto', sans-serif;
+        line-height: 47px;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .inputForm {
+        padding: 15px 0px 15px 15px;
+        width: 800px;
+        height: 30px;
+        margin: 15px 0;
+        font-family: 'roboto', sans-serif;
+        font-size: 24px;
+        border: 1px solid #373867;
+    }
+
+    label {
+        color: #373867;
+        font-weight: 700;
+        font-family: 'roboto', sans-serif;
+        font-size: 30px;
+        width: 800px;
+    }
+
+    .displayTitle > a {
+        width: 40%;
+    }
+
+    .signUp {
+        color: #373867;
+        font-family: 'roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .loginButton {
+        border-radius: 5px;
+        color: darkslategrey;
+        width: 250px;
+        height: 60px;
+        background-color: #AACE9B;
+        color: #373867;
+        font-family: 'roboto', sans-serif;
+        align-self: center;
+        border: #AACE9B 1px solid;
+        font-weight: 700;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .errorHidden {
+        display: none;
+    }
+    
+    .focusInput {
+        border: 3px solid blue;
+    }
+    
+    .inputSuccess {
+        border: 3px solid green;
+    }
+    
+    .inputWithError {
+        border: 3px solid red;
+    }
+    
+    .errorDisplayed {
+        color: red;
+        font-size: 20px;
+        display: block;
+        margin: 7px 0;
+    }
+}
+
+@media  screen and (min-width: 1512px) {
+    .imgBack {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #373867;
+        font-weight: 700;
+        font-family: 'roboto', sans-serif;
+        font-size: 90px;
+    }
+
+    .inputForm {
+        padding: 15px 0px 15px 15px;
+        width: 1000px;
+        height: 60px;
+        margin: 25px 0;
+        font-family: 'roboto', sans-serif;
+        font-size: 39px;
+        border: 1px solid #373867;
+    }
+
+    label {
+        color: #373867;
+        font-weight: 700;
+        font-family: 'roboto', sans-serif;
+        font-size: 60px;
+        width: 1000px;
+    }
+
+    .signUp {
+        color: #373867;
+        font-family: 'roboto', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .loginButton {
+        border-radius: 5px;
+        color: darkslategrey;
+        width: 350px;
+        height: 90px;
+        background-color: #AACE9B;
+        color: #373867;
+        font-family: 'roboto', sans-serif;
+        border: #AACE9B 1px solid;
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .errorHidden {
+        display: none;
+    }
+    
+    .focusInput {
+        border: 3px solid blue;
+    }
+    
+    .inputSuccess {
+        border: 3px solid green;
+    }
+    
+    .inputWithError {
+        border: 3px solid red;
+    }
+    
+    .errorDisplayed {
+        color: red;
+        font-size: 20px;
+        display: block;
+        margin: 7px 0;
+    }
+}

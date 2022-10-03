@@ -52,7 +52,6 @@ window.onload = function(){
     email.style.border = "3px solid blue";
   }
 
- 
 //password validation
 var password = document.getElementById('password');
 var passwordError = document.getElementById ('password-error');
