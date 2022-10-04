@@ -398,27 +398,16 @@ window.onload = function() {
         && validateDni(dni.value)
         && validateDate(date.value)
         && validatePhone(phone.value)
-        && validateAdress(adress.value)
         && validateCity(city.value)
         && validateZip(zip.value)
         && validateMail(email.value)
         && validatePassword(password.value)
         && validateRepeatPassword(repeatPassword.value)
       ) {
-          fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=
-            ${name.value}&lastName=
-            ${lastName.value}&dni=
-            ${dni.value}&date=
-            ${date.value}&phone=
-            ${phone.value}&adress=
-            ${adress.value}&city=
-            ${city.value}&zip=
-            ${zip.value}&email=
-            ${email.value}&password=
-            ${password.value}&repeatPassword=
-            ${repeatPassword.value}`)
+          fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${name.value}&lastName=${lastName.value}&dni=${dni.value}&dob=${date.value}&phone=${phone.value}&address=${adress.value}&city=${city.value}&zip=${zip.value}&email=${email.value}&password=${password.value}&repeatPassword=${repeatPassword.value}`)
             .then(response => response.json())
             .then(data => {
+              if(data.success) {
               localStorage.setItem('name', name.value);
               localStorage.setItem('lastName', lastName.value);
               localStorage.setItem('dni', dni.value);
@@ -441,7 +430,7 @@ window.onload = function() {
               + '. Email: ' + email.value
               + '. Password: ' + password.value
               + '. Repeat Password: ' + repeatPassword.value + '. Please, confirm.');
-              form.reset();
+              // form.reset();
               name.classList.remove("inputSuccess");
               lastName.classList.remove("inputSuccess");
               dni.classList.remove("inputSuccess");
@@ -453,7 +442,7 @@ window.onload = function() {
               email.classList.remove("inputSuccess");
               password.classList.remove("inputSuccess");
               repeatPassword.classList.remove("inputSuccess");
-            })
+            }})
               .catch(error => console.error(error));
       } else {
         if (!validateName()){
@@ -515,3 +504,4 @@ window.onload = function() {
         throw new Error
       }
     };
+  }
