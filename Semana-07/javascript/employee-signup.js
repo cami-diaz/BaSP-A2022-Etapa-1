@@ -27,16 +27,16 @@ window.onload = function() {
   var nameError = document.getElementById ('name-error');
 
   function validateName(){
-    if (name.value.length < 4 || numberValidator(name.value)){
+    if (name.value.length < 4 || numberValidator(name.value)) {
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  name.onblur = function(){
-    if (validateName(name.value)){
+  name.onblur = function() {
+    if (validateName(name.value)) {
       name.classList.add("inputSuccess");
       name.classList.remove("focusInput");
       name.classList.remove("inputWithError");
@@ -48,7 +48,7 @@ window.onload = function() {
     }
   }
 
-  name.onfocus = function(){
+  name.onfocus = function() {
     nameError.classList.add("errorHidden");
     nameError.classList.remove("errorDisplayed");
     name.classList.add("focusInput");
@@ -59,8 +59,9 @@ window.onload = function() {
   //lastName validation
   var lastName = document.getElementById('lastName');
   var lastNameError = document.getElementById ('lastName-error');
-  function validateLastName(){
-    if (lastName.value.length < 4 || numberValidator(lastName.value)){
+
+  function validateLastName() {
+    if (lastName.value.length < 4 || numberValidator(lastName.value)) {
       return false;
     }
     else{
@@ -68,8 +69,8 @@ window.onload = function() {
     }
   }
 
-  lastName.onblur = function(){
-    if (validateLastName(lastName.value)){
+  lastName.onblur = function() {
+    if (validateLastName(lastName.value)) {
       lastName.classList.add("inputSuccess");
       lastName.classList.remove("focusInput");
       lastName.classList.remove("inputWithError");
@@ -81,7 +82,7 @@ window.onload = function() {
     }
   }
 
-  lastName.onfocus = function(){
+  lastName.onfocus = function() {
     lastNameError.classList.add("errorHidden");
     lastNameError.classList.remove("errorDisplayed");
     lastName.classList.add("focusInput");
@@ -93,8 +94,8 @@ window.onload = function() {
   var dni = document.getElementById('dni');
   var dniError = document.getElementById ('dni-error');
 
-  function validateDni(){
-      if (dni.value.length < 8 || !numberValidator(dni.value)){
+  function validateDni() {
+      if (dni.value.length < 8 || !numberValidator(dni.value)) {
           return false;
       }
       else{
@@ -102,8 +103,8 @@ window.onload = function() {
       }
   }
 
-  dni.onblur = function(){
-    if (validateDni(dni.value)){
+  dni.onblur = function() {
+    if (validateDni(dni.value)) {
       dni.classList.add("inputSuccess");
       dni.classList.remove("focusInput");
       dni.classList.remove("inputWithError");
@@ -114,7 +115,7 @@ window.onload = function() {
       dni.classList.remove("focusInput");
     }
   }
-  dni.onfocus = function(){
+  dni.onfocus = function() {
     dniError.classList.add("errorHidden");
     dniError.classList.remove("errorDisplayed");
     dni.classList.add("focusInput");
@@ -126,14 +127,14 @@ window.onload = function() {
   var date = document.getElementById('date');
   var dateError = document.getElementById ('birthDate-error');
 
-  function validateDate(){
+  function validateDate() {
     if(date.value !== "") {
       return true
     } else return false
   }
 
-  date.onblur = function(){
-    if (validateDate(date.value)){
+  date.onblur = function() {
+    if (validateDate(date.value)) {
       date.classList.add("inputSuccess");
       date.classList.remove("focusInput");
       date.classList.remove("inputWithError");
@@ -145,7 +146,7 @@ window.onload = function() {
     }
   }
 
-  date.onfocus = function(){
+  date.onfocus = function() {
     dateError.classList.add("errorHidden");
     dateError.classList.remove("errorDisplayed");
     date.classList.add("focusInput");
@@ -157,17 +158,17 @@ window.onload = function() {
   var phone = document.getElementById('phone');
   var phoneError = document.getElementById ('phone-error');
 
-  function validatePhone(){
-      if (phone.value.length !== 10 || !numberValidator(phone.value)){
+  function validatePhone() {
+      if (phone.value.length !== 10 || !numberValidator(phone.value)) {
           return false;
       }
-      else{
+      else {
           return true;
       }
   }
 
-  phone.onblur = function(){
-    if (validatePhone(phone.value)){
+  phone.onblur = function() {
+    if (validatePhone(phone.value)) {
       phone.classList.add("inputSuccess");
       phone.classList.remove("focusInput");
       phone.classList.remove("inputWithError");
@@ -178,7 +179,7 @@ window.onload = function() {
       phone.classList.remove("focusInput");
     }
   }
-  phone.onfocus = function(){
+  phone.onfocus = function() { 
     phoneError.classList.add("errorHidden");
     phoneError.classList.remove("errorDisplayed");
     phone.classList.add("focusInput");
@@ -189,9 +190,9 @@ window.onload = function() {
   //adress validation
   var adress = document.getElementById('adress');
   var adressError = document.getElementById('adress-error');
-  function validateAdress(){
+  function validateAdress() {
       var space = adress.value.indexOf(" ");
-      if(adress.value.length >= 5 && space > 0 && numberValidator(adress.value) && letterValidator(adress.value)){
+      if(adress.value.length >= 5 && space > 0 && numberValidator(adress.value) && letterValidator(adress.value)) {
           return true;
       }
       else{
@@ -199,8 +200,8 @@ window.onload = function() {
       }
   }
 
-  adress.onblur = function(){
-    if (validateAdress(adress.value)){
+  adress.onblur = function() {
+    if (validateAdress(adress.value)) {
       adress.classList.add("inputSuccess");
       adress.classList.remove("focusInput");
       adress.classList.remove("inputWithError");
@@ -212,7 +213,7 @@ window.onload = function() {
     }
   }
 
-  adress.onfocus = function(){
+  adress.onfocus = function() {
     adressError.classList.add("errorHidden");
     adressError.classList.remove("errorDisplayed");
     adress.classList.add("focusInput");
@@ -224,17 +225,17 @@ window.onload = function() {
   var city = document.getElementById('city');
   var cityError = document.getElementById ('city-error');
 
-  function validateCity(){
-    if (city.value.length < 3){
+  function validateCity() {
+    if (city.value.length < 3) {
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  city.onblur = function(){
-    if (validateCity(city.value)){
+  city.onblur = function() {
+    if (validateCity(city.value)) {
       city.classList.add("inputSuccess");
       city.classList.remove("focusInput");
       city.classList.remove("inputWithError");
@@ -245,7 +246,7 @@ window.onload = function() {
       city.classList.remove("focusInput");
     }
   }
-  city.onfocus = function(){
+  city.onfocus = function() {
     cityError.classList.add("errorHidden");
     cityError.classList.remove("errorDisplayed");
     city.classList.add("focusInput");
@@ -257,17 +258,17 @@ window.onload = function() {
   var zip = document.getElementById('zip');
   var zipError = document.getElementById ('zip-error');
 
-  function validateZip(){
-    if (zip.value.length < 4 || zip.value.length > 5 || letterValidator(zip.value)){
+  function validateZip() {
+    if (zip.value.length < 4 || zip.value.length > 5 || letterValidator(zip.value)) {
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  zip.onblur = function(){
-    if (validateZip(zip.value)){
+  zip.onblur = function() {
+    if (validateZip(zip.value)) {
       zip.classList.add("inputSuccess");
       zip.classList.remove("focusInput");
       zip.classList.remove("inputWithError");
@@ -278,7 +279,7 @@ window.onload = function() {
       zip.classList.remove("focusInput");
     }
   }
-  zip.onfocus = function(){
+  zip.onfocus = function() {
     zipError.classList.add("errorHidden");
     zipError.classList.remove("errorDisplayed");
     zip.classList.add("focusInput");
@@ -290,17 +291,18 @@ window.onload = function() {
   var email = document.getElementById('email');
   var emailError = document.getElementById('email-error');
   var mailFormat = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-  function validateMail(){ 
-    if (email.value.match(mailFormat)){
+
+  function validateMail() {  
+    if (email.value.match(mailFormat)) {
         return true;
     }
-    else{
+    else {
         return false;
     }
   }
 
-  email.onblur = function(){
-    if (validateMail(email.value)){
+  email.onblur = function() {
+    if (validateMail(email.value)) {
       email.classList.add("inputSuccess");
       email.classList.remove("focusInput");
       email.classList.remove("inputWithError");
@@ -312,7 +314,7 @@ window.onload = function() {
     }
   }
 
-  email.onfocus = function(){
+  email.onfocus = function() {
     emailError.classList.add("errorHidden");
     emailError.classList.remove("errorDisplayed");
     email.classList.add("focusInput");
@@ -320,22 +322,21 @@ window.onload = function() {
     email.classList.remove("inputWithError");
   }
 
-
   //password validation
   var password = document.getElementById('password');
   var passwordError = document.getElementById ('password-error');
 
-  function validatePassword(){
-    if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
+  function validatePassword() {
+    if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)) {
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  password.onblur = function(){
-    if (validatePassword(password.value)){
+  password.onblur = function() {
+    if (validatePassword(password.value)) {
       password.classList.add("inputSuccess");
       password.classList.remove("focusInput");
       password.classList.remove("inputWithError");
@@ -346,7 +347,7 @@ window.onload = function() {
       password.classList.remove("focusInput");
     }
   }
-  password.onfocus = function(){
+  password.onfocus = function() {
     passwordError.classList.add("errorHidden");
     passwordError.classList.remove("errorDisplayed");
     password.classList.add("focusInput");
@@ -358,17 +359,17 @@ window.onload = function() {
   var repeatPassword = document.getElementById('repeatPassword');
   var repeatPasswordError = document.getElementById ('repeatPassword-error');
 
-  function validateRepeatPassword(){
+  function validateRepeatPassword() {
     if (repeatPassword.value !== password.value || repeatPassword.value.length === 0){
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  repeatPassword.onblur = function(){
-    if (validateRepeatPassword(repeatPassword.value)){
+  repeatPassword.onblur = function() { 
+    if (validateRepeatPassword(repeatPassword.value)) {
       repeatPassword.classList.add("inputSuccess");
       repeatPassword.classList.remove("focusInput");
       repeatPassword.classList.remove("inputWithError");
@@ -379,7 +380,7 @@ window.onload = function() {
       repeatPassword.classList.remove("focusInput");
     }
   }
-  repeatPassword.onfocus = function(){
+  repeatPassword.onfocus = function() {
     repeatPasswordError.classList.add("errorHidden");
     repeatPasswordError.classList.remove("errorDisplayed");
     repeatPassword.classList.add("focusInput");
@@ -430,7 +431,7 @@ window.onload = function() {
               + '. Email: ' + email.value
               + '. Password: ' + password.value
               + '. Repeat Password: ' + repeatPassword.value + '. Please, confirm.');
-              // form.reset();
+              form.reset();
               name.classList.remove("inputSuccess");
               lastName.classList.remove("inputSuccess");
               dni.classList.remove("inputSuccess");
@@ -445,63 +446,83 @@ window.onload = function() {
             }})
               .catch(error => console.error(error));
       } else {
-        if (!validateName()){
+        if (!validateName()) {
           name.classList.add("inputWithError");
           nameError.classList.add("errorDisplayed");
           name.classList.remove("focusInput");
         }
-        if (!validateLastName()){
+        if (!validateLastName()) {
           lastName.classList.add("inputWithError");
           lastNameError.classList.add("errorDisplayed");
           lastName.classList.remove("focusInput");
         }
-        if (!validateDni()){
+        if (!validateDni()) {
           dni.classList.add("inputWithError");
           dniError.classList.add("errorDisplayed");
           dni.classList.remove("focusInput");
         }
-        if (!validateDate()){
+        if (!validateDate()) {
           date.classList.add("inputWithError");
           dateError.classList.add("errorDisplayed");
           date.classList.remove("focusInput");
         }
-        if (!validatePhone()){
+        if (!validatePhone()) {
           phone.classList.add("inputWithError");
           phoneError.classList.add("errorDisplayed");
           phone.classList.remove("focusInput");
         }
-      if (!validateAdress()){
-        adress.classList.add("inputWithError");
-        adressError.classList.add("errorDisplayed");
-        adress.classList.remove("focusInput");
+        if (!validateAdress()) {
+          adress.classList.add("inputWithError");
+          adressError.classList.add("errorDisplayed");
+          adress.classList.remove("focusInput");
+        }
+        if (!validateCity()) {
+          city.classList.add("inputWithError");
+          cityError.classList.add("errorDisplayed");
+          city.classList.remove("focusInput");
+        }
+        if (!validateZip()) {
+          zip.classList.add("inputWithError");
+          zipError.classList.add("errorDisplayed");
+          zip.classList.remove("focusInput");;
+        }
+        if (!validateMail()) {
+          email.classList.add("inputWithError");
+          emailError.classList.add("errorDisplayed");
+          email.classList.remove("focusInput");
+        }
+        if (!validatePassword()) {
+          password.classList.add("inputWithError");
+          passwordError.classList.add("errorDisplayed");
+          password.classList.remove("focusInput");
+        }
+        if (!validateRepeatPassword()) {
+          repeatPassword.classList.add("inputWithError");
+          repeatPasswordError.classList.add("errorDisplayed");
+          repeatPassword.classList.remove("focusInput");
+        }
+          alert('Please, check you information is correct.');
+          throw new Error
+        }
+      };
+
+      function formFilledWithLocalStorage() {
+        if (localStorage.name && localStorage.lastName && localStorage.dni && localStorage.date && localStorage.phone
+        && localStorage.adress && localStorage.city && localStorage.zip && localStorage.email && localStorage.password
+        && localStorage.repeatPassword) {
+          name.value = localStorage.name;
+          lastName.value = localStorage.lastName;
+          dni.value = localStorage.dni;
+          date.value = localStorage.date;
+          phone.value = localStorage.phone;
+          adress.value = localStorage.adress;
+          city.value = localStorage.city;
+          zip.value = localStorage.zip;
+          email.value = localStorage.email;
+          password.value = localStorage.password;
+          repeatPassword.value = localStorage.repeatPassword;
+        }
       }
-      if (!validateCity()){
-        city.classList.add("inputWithError");
-        cityError.classList.add("errorDisplayed");
-        city.classList.remove("focusInput");
-      }
-      if (!validateZip()){
-        zip.classList.add("inputWithError");
-        zipError.classList.add("errorDisplayed");
-        zip.classList.remove("focusInput");;
-      }
-      if (!validateMail()){
-        email.classList.add("inputWithError");
-        emailError.classList.add("errorDisplayed");
-        email.classList.remove("focusInput");
-      }
-      if (!validatePassword()){
-        password.classList.add("inputWithError");
-        passwordError.classList.add("errorDisplayed");
-        password.classList.remove("focusInput");
-      }
-      if (!validateRepeatPassword()){
-        repeatPassword.classList.add("inputWithError");
-        repeatPasswordError.classList.add("errorDisplayed");
-        repeatPassword.classList.remove("focusInput");
-      }
-        alert('Please, check you information is correct.');
-        throw new Error
-      }
-    };
+    
+      formFilledWithLocalStorage();
   }

@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function() {
 
   function numberValidator(fullWord) {
     var numbersArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
@@ -26,17 +26,17 @@ window.onload = function(){
   var email = document.getElementById('email');
   var emailError = document.getElementById('email-error');
   var mailFormat = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-  function validateMail(){ 
+  function validateMail() { 
     if (email.value.match(mailFormat)){
         return true;
     }
-    else{
+    else {
         return false;
     }
   }
 
-  email.onblur = function(){
-    if (validateMail(email.value)){
+  email.onblur = function() {
+    if (validateMail(email.value)) {
       email.classList.add("inputSuccess");
       email.classList.remove("focusInput");
       email.classList.remove("inputWithError")
@@ -47,7 +47,7 @@ window.onload = function(){
       email.classList.remove("focusInput")
     }
   }
-  email.onfocus = function(){
+  email.onfocus = function() {
     emailError.classList.add("errorHidden");
     emailError.classList.remove("errorDisplayed");
     email.classList.add("focusInput")
@@ -58,17 +58,17 @@ window.onload = function(){
   var password = document.getElementById('password');
   var passwordError = document.getElementById ('password-error');
 
-  function validatePassword(){
+  function validatePassword() {
     if (password.value.length < 8 || !numberValidator(password.value) || !letterValidator(password.value)){
       return false;
     }
-    else{
+    else {
       return true;
     }
   }
 
-  password.onblur = function(){
-    if (validatePassword(password.value)){
+  password.onblur = function() {
+    if (validatePassword(password.value)) {
       password.classList.add("inputSuccess");
       password.classList.remove("focusInput");
       password.classList.remove("inputWithError");
@@ -79,7 +79,7 @@ window.onload = function(){
       password.classList.remove("focusInput");
     }
   }
-  password.onfocus = function(){
+  password.onfocus = function() {
     passwordError.classList.add("errorHidden");
     passwordError.classList.remove("errorDisplayed");
     password.classList.add("focusInput");
